@@ -1,0 +1,11 @@
+<powerpagecomponent powerpagecomponentid="c407e024-7822-ee11-9cbd-000d3a190120">
+  <content>{"source":"{% extends 'Layout 1 Column' %}\r\r{% block title %}\r  {% if page.children.size &gt; 0 %}\r    {% include 'Tab Header' %}\r  {% else %}\r    {% include 'Page Header' %}\r  {% endif %}\r{% endblock %}"}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Category</name>
+  <powerpagecomponenttype>8</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

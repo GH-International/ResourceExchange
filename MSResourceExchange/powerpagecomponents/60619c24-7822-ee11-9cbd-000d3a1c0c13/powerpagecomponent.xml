@@ -1,0 +1,22 @@
+<powerpagecomponent powerpagecomponentid="60619c24-7822-ee11-9cbd-000d3a1c0c13">
+  <content>{
+  "disablepagevalidation": false,
+  "displayimageonly": false,
+  "displayorder": 2,
+  "displaypagechildlinks": false,
+  "openinnewwindow": false,
+  "pageid": "21619c24-7822-ee11-9cbd-000d3a1c0c13",
+  "parentweblinkid": "9512972a-7822-ee11-9cbd-000d3a1c0c13",
+  "publishingstateid": "1823d82c-7822-ee11-9cbd-000d3a1c017f",
+  "robotsfollowlink": true,
+  "weblinksetid": "bb12972a-7822-ee11-9cbd-000d3a1c0c13"
+}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Subpage 2-deleted</name>
+  <powerpagecomponenttype>5</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <statecode>1</statecode>
+  <statuscode>2</statuscode>
+</powerpagecomponent>

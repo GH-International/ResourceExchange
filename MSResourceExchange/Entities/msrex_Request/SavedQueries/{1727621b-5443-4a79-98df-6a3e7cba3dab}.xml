@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>1</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{1727621b-5443-4a79-98df-6a3e7cba3dab}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msrex_name" select="1" icon="1" preview="1">
+        <row name="result" id="msrex_requestid">
+          <cell name="msrex_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>4</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msrex_request">
+          <attribute name="msrex_requestid" />
+          <attribute name="msrex_name" />
+          <attribute name="createdon" />
+          <order attribute="msrex_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <filter type="or" isquickfindfields="1">
+            <condition attribute="msrex_name" operator="like" value="{0}" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Quick Find Active requests" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

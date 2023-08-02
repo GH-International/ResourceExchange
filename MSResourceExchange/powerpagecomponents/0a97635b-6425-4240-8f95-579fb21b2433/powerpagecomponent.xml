@@ -1,0 +1,30 @@
+<powerpagecomponent powerpagecomponentid="0a97635b-6425-4240-8f95-579fb21b2433">
+  <content>{
+  "entityname": "Child - Note",
+  "entitylogicalname": "annotation",
+  "scope": 756150003,
+  "append": true,
+  "appendto": false,
+  "delete": false,
+  "read": true,
+  "create": true,
+  "write": true,
+  "parentrelationship": "msrex_offers_Annotations",
+  "parententitypermission": "965cd96b-9c34-4200-85f7-db920ee155d4",
+  "contactrelationship": null,
+  "accountrelationship": null,
+  "childTablePermissions": [],
+  "adx_entitypermission_webrole": [
+    "c907e024-7822-ee11-9cbd-000d3a190120",
+    "b012972a-7822-ee11-9cbd-000d3a1c0c13"
+  ]
+}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Child - Note</name>
+  <powerpagecomponenttype>18</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

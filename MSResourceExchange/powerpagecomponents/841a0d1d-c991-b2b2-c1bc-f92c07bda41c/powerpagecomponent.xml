@@ -1,0 +1,26 @@
+<powerpagecomponent powerpagecomponentid="841a0d1d-c991-b2b2-c1bc-f92c07bda41c">
+  <content>{
+  "displayorder": 4,
+  "pagetemplateid": "5e619c24-7822-ee11-9cbd-000d3a1c0c13",
+  "parentpageid": "2f619c24-7822-ee11-9cbd-000d3a1c0c13",
+  "partialurl": "Requests",
+  "isroot": true,
+  "title": "Requests",
+  "summary": "&lt;p&gt;This is a sample landing page designed to be a starting point for your website&lt;/p&gt;",
+  "copy": "",
+  "publishingstateid": "1823d82c-7822-ee11-9cbd-000d3a1c017f",
+  "enablerating": false,
+  "enabletracking": false,
+  "excludefromsearch": false,
+  "hiddenfromsitemap": true,
+  "sharedpageconfiguration": false
+}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Requests</name>
+  <powerpagecomponenttype>2</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

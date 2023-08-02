@@ -1,0 +1,28 @@
+<powerpagecomponent powerpagecomponentid="2372c413-1269-4338-94c2-c9e585725452">
+  <content>{
+  "lcid": 1033,
+  "entityname": "msrex_offers",
+  "formname": "New Offer",
+  "mode": 100000000,
+  "onsuccess": "756150000",
+  "successmessage": "",
+  "hideformonsuccess": true,
+  "redirectwebpage": null,
+  "redirecturl": null,
+  "captcharequired": true,
+  "showcaptchaforauthenticatedusers": true,
+  "entitypermissionsenabled": true,
+  "attachfilelabel": "",
+  "attachfilemaxsize": null,
+  "entitysourcetype": null,
+  "recordidquerystringparametername": null
+}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>New Offer Create</name>
+  <powerpagecomponenttype>15</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

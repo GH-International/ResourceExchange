@@ -1,0 +1,31 @@
+<powerpagecomponent powerpagecomponentid="9d12972a-7822-ee11-9cbd-000d3a1c0c13">
+  <content>{
+  "copy": "&lt;div class=\"row sectionBlockLayout\" data-component-theme=\"portalThemeColor3\" style=\"display: flex; flex-wrap: wrap; height: 15px; min-height: 15px;\"&gt;\r\n&lt;/div&gt;\r\n&lt;div class=\"row sectionBlockLayout\" style=\"display: flex; flex-wrap: wrap; text-align: left; min-height: auto;\"&gt;\r\n  &lt;div class=\"container\" style=\"padding: 0px; display: flex; flex-wrap: wrap;\"&gt;\r\n    &lt;div class=\"col-md-12 columnBlockLayout\" style=\"flex-grow: 1; display: flex; flex-direction: column; min-width: 300px;\"&gt;\r\n      &lt;h2&gt;Pages&lt;/h2&gt;\r\n      &lt;p&gt;This section can be used to introduce the contents of the subpages and encourage your target audience to explore those pages. If this content gets too long, consider splitting it into two smaller paragraphs.&lt;/p&gt;\r\n    &lt;/div&gt;\r\n  &lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;div class=\"row sectionBlockLayout\" style=\"display: flex; flex-wrap: wrap; text-align: left; min-height: auto;\"&gt;\r\n  &lt;div class=\"container\" style=\"padding: 0px; display: flex; flex-wrap: wrap;\"&gt;\r\n    &lt;div class=\"col-md-6 columnBlockLayout\" style=\"flex-grow: 1; display: flex; flex-direction: column; min-width: 300px;\"&gt;&lt;img src=\"/Circle-1.png\" alt=\"\" name=\"Circle-1.png\" style=\"width: 108px; height: 108px; max-width: 100%; margin-left: auto; margin-right: auto;\"&gt;\r\n      &lt;h3 style=\"text-align: center;\"&gt;Subpage 1&lt;/h3&gt;\r\n      &lt;p style=\"text-align: center;\"&gt;Create a short description or engaging message to motivate your audience to take action&lt;/p&gt;\r\n    &lt;/div&gt;\r\n    &lt;div class=\"col-md-6 columnBlockLayout\" style=\"flex-grow: 1; display: flex; flex-direction: column; min-width: 300px;\"&gt;&lt;img src=\"/Circle-2.png\" alt=\"\" name=\"Circle-2.png\" style=\"width: 108px; height: 108px; max-width: 100%; margin-left: auto; margin-right: auto;\"&gt;\r\n      &lt;h3 style=\"text-align: center;\"&gt;Subpage 2&lt;/h3&gt;\r\n      &lt;p style=\"text-align: center;\"&gt;Create a short description or engaging message to motivate your audience to take action&lt;/p&gt;\r\n    &lt;/div&gt;\r\n  &lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;div class=\"row sectionBlockLayout\" data-component-theme=\"portalThemeColor1\" style=\"display: flex; flex-wrap: wrap; text-align: left; min-height: auto;\"&gt;\r\n  &lt;div class=\"container\" style=\"padding: 0px; display: flex; flex-wrap: wrap;\"&gt;\r\n    &lt;div class=\"col-md-12 columnBlockLayout\" style=\"flex-grow: 1; display: flex; flex-direction: column; min-width: 300px;\"&gt;\r\n      &lt;div class=\"row sectionBlockLayout\" style=\"display: flex; flex-wrap: wrap; min-height: 120px;\"&gt;&lt;/div&gt;\r\n      &lt;h1 style=\"text-align: center;\"&gt;Introduce another idea &lt;/h1&gt;\r\n      &lt;p style=\"text-align: center;\"&gt;This section can be used to offer supporting information or introduce a new idea. It’s best to keep it relevant to the contents of the page so it doesn’t feel out of place. &lt;/p&gt;\r\n      &lt;div class=\"row sectionBlockLayout\" style=\"display: flex; flex-wrap: wrap; min-height: 120px;\"&gt;&lt;/div&gt;\r\n    &lt;/div&gt;\r\n  &lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;div class=\"row sectionBlockLayout\" data-component-theme=\"portalThemeColor2\" style=\"display: flex; flex-wrap: wrap; min-height: 28px;\"&gt;&lt;/div&gt;\r\n&lt;div class=\"row sectionBlockLayout\" data-component-theme=\"portalThemeColor6\" style=\"display: flex; flex-wrap: wrap; min-height: 52px;\"&gt;&lt;/div&gt;",
+  "displayorder": 2,
+  "enablerating": false,
+  "enabletracking": false,
+  "excludefromsearch": false,
+  "feedbackpolicy": 756150000,
+  "hiddenfromsitemap": false,
+  "isroot": false,
+  "pagetemplateid": "5e619c24-7822-ee11-9cbd-000d3a1c0c13",
+  "parentpageid": "2f619c24-7822-ee11-9cbd-000d3a1c0c13",
+  "partialurl": "page-deleted",
+  "publishingstateid": "1823d82c-7822-ee11-9cbd-000d3a1c017f",
+  "rootwebpageid": "9912972a-7822-ee11-9cbd-000d3a1c0c13",
+  "sharedpageconfiguration": false,
+  "summary": "&lt;p&gt;This page has a full-size layout (no sidebar).&lt;/p&gt;",
+  "title": "Pages"
+}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Pages-deleted</name>
+  <powerpagecomponenttype>2</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <powerpagesitelanguageid>
+    <powerpagesitelanguageid>26f7d230-7822-ee11-9cbd-000d3a190120</powerpagesitelanguageid>
+  </powerpagesitelanguageid>
+  <statecode>1</statecode>
+  <statuscode>2</statuscode>
+</powerpagecomponent>

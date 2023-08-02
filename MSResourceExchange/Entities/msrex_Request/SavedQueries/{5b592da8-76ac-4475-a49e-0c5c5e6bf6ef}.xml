@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{5b592da8-76ac-4475-a49e-0c5c5e6bf6ef}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msrex_name" select="1" icon="1" preview="1">
+        <row name="result" id="msrex_requestid">
+          <cell name="msrex_name" width="300" />
+          <cell name="msrex_requestsummary" width="144" />
+          <cell name="msresour_organizationname" width="150" />
+          <cell name="msrex_location" width="134" />
+          <cell name="statecode" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical" distinct="true">
+        <entity name="msrex_request">
+          <attribute name="msrex_requestid" />
+          <attribute name="msrex_name" />
+          <order attribute="msrex_name" descending="false" />
+          <attribute name="msrex_location" />
+          <attribute name="msrex_requestsummary" />
+          <attribute name="statecode" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+            <condition attribute="cr85b_batchuploadyesno" operator="ne" value="1" />
+          </filter>
+          <attribute name="msresour_organizationname" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active requests" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

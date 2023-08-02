@@ -1,0 +1,22 @@
+<powerpagecomponent powerpagecomponentid="7ddf925c-1c8a-fa16-66c0-6b6e49cea46d">
+  <content>{
+  "displayorder": 2,
+  "parentweblinkid": "5da777f7-457a-0039-6cdc-0ea504117a1f",
+  "weblinksetid": "bb12972a-7822-ee11-9cbd-000d3a1c0c13",
+  "pageid": "1406df6d-4a52-fd3f-b27d-48273cc1d8df",
+  "publishingstateid": "1823d82c-7822-ee11-9cbd-000d3a1c017f",
+  "displaypagevalidation": false,
+  "displayimageonly": false,
+  "displaypagechildlinks": false,
+  "openinnewwindow": false,
+  "robotsfollowlink": true
+}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Batch Upload</name>
+  <powerpagecomponenttype>5</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

@@ -1,0 +1,11 @@
+<powerpagecomponent powerpagecomponentid="4423d82c-7822-ee11-9cbd-000d3a1c017f">
+  <content>{"adddescription":false,"attributelogicalname":"comments","descriptionposition":100000000,"entityform":"b912972a-7822-ee11-9cbd-000d3a1c0c13","fieldisrequired":true,"ignoredefaultvalue":false,"onsavetype":100000000,"randomizeoptionsetvalues":false,"setvalueonsave":false,"type":100000000,"useattributedescriptionproperty":true}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>simple contact us form comments</name>
+  <powerpagecomponenttype>16</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

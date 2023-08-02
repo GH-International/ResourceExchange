@@ -1,0 +1,11 @@
+<powerpagecomponent powerpagecomponentid="b512972a-7822-ee11-9cbd-000d3a1c0c13">
+  <content>{"adx_pollplacement_poll":["8e4e9b51-f736-ec11-8c63-000d3a3adc33","944e9b51-f736-ec11-8c63-000d3a3adc33","984e9b51-f736-ec11-8c63-000d3a3adc33","9d4e9b51-f736-ec11-8c63-000d3a3adc33"]}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Home</name>
+  <powerpagecomponenttype>24</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

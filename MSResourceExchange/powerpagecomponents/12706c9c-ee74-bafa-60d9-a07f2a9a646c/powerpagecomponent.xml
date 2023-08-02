@@ -1,0 +1,30 @@
+<powerpagecomponent powerpagecomponentid="12706c9c-ee74-bafa-60d9-a07f2a9a646c">
+  <content>{
+  "displayorder": 4,
+  "pagetemplateid": "5e619c24-7822-ee11-9cbd-000d3a1c0c13",
+  "parentpageid": "2f619c24-7822-ee11-9cbd-000d3a1c0c13",
+  "partialurl": "Requests",
+  "isroot": false,
+  "rootwebpageid": "841a0d1d-c991-b2b2-c1bc-f92c07bda41c",
+  "title": "Requests",
+  "summary": "&lt;p&gt;This is a sample landing page designed to be a starting point for your website&lt;/p&gt;",
+  "copy": "&lt;div class=\"row sectionBlockLayout sectionPrimaryColor text-left\" style=\"display: flex; flex-wrap: wrap; height: 15px; padding: 8px; margin: 0px;\"&gt;&lt;div class=\"container\" style=\"display: flex; flex-wrap: wrap;\"&gt;&lt;/div&gt;&lt;/div&gt;\n&lt;div class=\"row sectionBlockLayout text-left\" style=\"display: flex; flex-wrap: wrap; min-height: 361px; padding: 8px; margin: 0px;\"&gt;\n  &lt;div class=\"container\" style=\"display: flex; flex-wrap: wrap;\"&gt;\n    &lt;div class=\"col-md-12 columnBlockLayout\" style=\"flex-grow: 1; min-width: 310px; word-break: break-word; display: flex; flex-direction: column;\"&gt;&lt;h3 style=\"text-align: left;\"&gt;Active Resource Requests are listed in the table below. Use the search feature, or click the column headers to search the requests.&lt;/h3&gt;&lt;/div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"row sectionBlockLayout text-left\" style=\"display: flex; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px;\"&gt;\n  &lt;div class=\"container\" style=\"padding: 0px; display: flex; flex-wrap: wrap;\"&gt;&lt;div class=\"col-md-12 columnBlockLayout\" style=\"flex-grow: 1; display: flex; flex-direction: column; min-width: 310px; word-break: break-word;\"&gt;{% include 'entity_list' key: 'Active requests' %}&lt;/div&gt;&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"row sectionBlockLayout text-left\" style=\"display: flex; flex-wrap: wrap; min-height: 100px; padding: 8px; margin: 0px;\"&gt;\n  &lt;div class=\"container\" style=\"display: flex; flex-wrap: wrap;\"&gt;\n    &lt;div class=\"col-md-6 columnBlockLayout\" style=\"flex-grow: 1; min-width: 310px; word-break: break-word; display: flex; flex-direction: column;\"&gt;\n      &lt;p&gt;Click the 'Create Request' button to post a new request. Requests can either by made individually, or bulk, If you are making a batch request, click here to open a&amp;nbsp;&lt;a href=\"/Requests/Batch-Upload\" value=\"Batch-Upload\" class=\"anchor-inherit-styles\"&gt;batch upload&lt;/a&gt; page.&lt;/p&gt;\n    &lt;/div&gt;\n    &lt;div class=\"col-md-6 columnBlockLayout\" style=\"flex-grow: 1; min-width: 310px; word-break: break-word; display: flex; flex-direction: column; justify-content: center;\"&gt;\n      &lt;h3&gt;Can you support an existing request?&lt;/h3&gt;\n      &lt;p&gt;Click the 'down arrow' icon on the right side of the request item and select 'Commit Resource'. Select 'Yes' for the Commit Resources question and provide any comments you want to share with the resource requestor.&lt;/p&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n",
+  "publishingstateid": "1823d82c-7822-ee11-9cbd-000d3a1c017f",
+  "enablerating": false,
+  "enabletracking": false,
+  "excludefromsearch": false,
+  "hiddenfromsitemap": true,
+  "sharedpageconfiguration": false
+}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Requests</name>
+  <powerpagecomponenttype>2</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <powerpagesitelanguageid>
+    <powerpagesitelanguageid>26f7d230-7822-ee11-9cbd-000d3a190120</powerpagesitelanguageid>
+  </powerpagesitelanguageid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

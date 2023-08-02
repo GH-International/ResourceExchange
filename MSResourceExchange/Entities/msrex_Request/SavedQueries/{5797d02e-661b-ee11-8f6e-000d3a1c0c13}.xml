@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{5797d02e-661b-ee11-8f6e-000d3a1c0c13}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msrex_name" select="1" icon="1" preview="1">
+        <row name="result" id="msrex_requestid">
+          <cell name="msrex_name" width="200" />
+          <cell name="msrex_requeststatus" width="123" />
+          <cell name="msrex_requestsummary" width="144" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" output-format="xml-platform" mapping="logical">
+        <entity name="msrex_request">
+          <attribute name="msrex_name" />
+          <attribute name="msrex_requestid" />
+          <attribute name="msrex_requeststatus" />
+          <attribute name="msrex_requestsummary" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Request-Fufill" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="View to allow individuals to commit resources to an existing request." languagecode="1033" />
+    </Descriptions>
+  </savedquery>
+</savedqueries>

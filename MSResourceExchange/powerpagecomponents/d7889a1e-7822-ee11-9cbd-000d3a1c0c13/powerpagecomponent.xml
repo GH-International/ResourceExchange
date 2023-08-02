@@ -1,0 +1,11 @@
+<powerpagecomponent powerpagecomponentid="d7889a1e-7822-ee11-9cbd-000d3a1c0c13">
+  <content>{"source":"{% include 'Page Copy' %}"}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>100% Blank Page</name>
+  <powerpagecomponenttype>8</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

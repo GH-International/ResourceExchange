@@ -1,0 +1,11 @@
+<powerpagecomponent powerpagecomponentid="a5c1e71e-7822-ee11-9cbd-000d3a190120">
+  <content>{"source":"{% extends \"Layout 2 Column Wide Right\" %}\r\r{% block aside %}\r  &lt;div class=\"hidden-xs hidden-print\"&gt;\r    {% include \"Side Navigation\" depth_offset: 1 %}\r  &lt;/div&gt;\r{% endblock %}"}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Page with Side Navigation (2 columns)</name>
+  <powerpagecomponenttype>8</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

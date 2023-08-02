@@ -1,0 +1,11 @@
+<powerpagecomponent powerpagecomponentid="27619c24-7822-ee11-9cbd-000d3a1c0c13">
+  <content>{"source":"{% assign showchildren = showchildren | default: true %}\r\n{% assign showdescriptions = showdescriptions | default: true %}\r\n{% if showchildren and page.children.size &gt; 0 %}\r\n&lt;div class=\"child-navigation content-panel panel panel-default\"&gt;\r\n    &lt;div class=\"panel-heading\"&gt;\r\n        &lt;h3&gt;{% editable snippets \"Page Children Heading\" default: 'In This Section' %}&lt;/h3&gt;\r\n    &lt;/div&gt;\r\n    {% if showdescriptions %}\r\n    &lt;ul class=\"list-group\"&gt;\r\n        {% for node in page.children %}\r\n        &lt;li class=\"list-group-item\"&gt;\r\n            &lt;h4 class=\"list-group-item-heading\"&gt;\r\n                &lt;a href=\"{{ node.url | escape }}\" aria-label = \"Go to {{node.title | escape}} page\"&gt;{{ node.title | escape }}&lt;/a&gt;\r\n            &lt;/h4&gt;\r\n            &lt;div class=\"list-group-item-text\"&gt;\r\n                {{ node.description }}\r\n            &lt;/div&gt;\r\n        &lt;/li&gt;\r\n        {% endfor %}\r\n    &lt;/ul&gt;\r\n    {% else %}\r\n    &lt;div class=\"list-group\"&gt;\r\n        {% for node in page.children %}\r\n        &lt;a href=\"{{ node.url | escape }}\" class=\"list-group-item\"&gt;{{ node.title | escape }}&lt;/a&gt;\r\n        {% endfor %}\r\n    &lt;/div&gt;\r\n    {% endif %}\r\n&lt;/div&gt;\r\n{% endif %}"}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Child Navigation</name>
+  <powerpagecomponenttype>8</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

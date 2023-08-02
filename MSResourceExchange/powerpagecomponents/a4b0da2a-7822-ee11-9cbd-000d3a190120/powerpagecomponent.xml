@@ -1,0 +1,14 @@
+<powerpagecomponent powerpagecomponentid="a4b0da2a-7822-ee11-9cbd-000d3a190120">
+  <content>{"display_name":"Profile/EmailConfirmation/WarningText","type":756150000,"value":"Your email requires confirmation"}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Profile/EmailConfirmation/WarningText</name>
+  <powerpagecomponenttype>7</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <powerpagesitelanguageid>
+    <powerpagesitelanguageid>26f7d230-7822-ee11-9cbd-000d3a190120</powerpagesitelanguageid>
+  </powerpagesitelanguageid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{93de4000-7fd4-4a73-8b8b-e979b75fdf39}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="msrex_name" select="1" icon="1" preview="1">
+        <row name="result" id="msrex_resourcesid">
+          <cell name="msrex_name" width="300" />
+          <cell name="msrex_resourcetype" width="124" />
+          <cell name="msrex_resourcedescription" width="161" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="msrex_resources">
+          <attribute name="msrex_resourcesid" />
+          <attribute name="msrex_name" />
+          <attribute name="createdon" />
+          <order attribute="msrex_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="msrex_resourcedescription" />
+          <attribute name="msrex_resourcetype" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Resources" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

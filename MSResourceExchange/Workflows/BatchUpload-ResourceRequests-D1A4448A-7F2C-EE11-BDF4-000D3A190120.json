@@ -1,0 +1,1157 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "msrex_sharedcommondataserviceforapps_13867"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_commondataserviceforapps_1": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "msdyn_Dataverse"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_a_row_is_added": {
+          "metadata": {
+            "operationMetadataId": "d5523879-af6d-48d9-9129-1b3f3ffd95eb"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps_1",
+              "operationId": "SubscribeWebhookTrigger",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "subscriptionRequest/message": 4,
+              "subscriptionRequest/entityname": "msrex_request",
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/filteringattributes": "cr85b_attachment,cr85b_batchuploadyesno"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "Condition": {
+          "actions": {
+            "Parse_JSON": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "031b3660-fae2-4d42-8d40-166123e75454"
+              },
+              "type": "ParseJson",
+              "inputs": {
+                "content": "@body('Get_a_row_by_ID')",
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "type": {
+                      "type": "string"
+                    },
+                    "properties": {
+                      "type": "object",
+                      "properties": {
+                        "@@@odata.context": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "@@@odata.type": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "@@@odata.id": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "@@@odata.etag": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "@@@odata.editLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_description": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "cra66_attachment_name": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "_owningbusinessunit_value@OData.Community.Display.V1.FormattedValue": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "_owningbusinessunit_value@Microsoft.Dynamics.CRM.associatednavigationproperty": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "_owningbusinessunit_value@Microsoft.Dynamics.CRM.lookuplogicalname": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "_owningbusinessunit_value@odata.type": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "_owningbusinessunit_value": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "_owninguser_value@Microsoft.Dynamics.CRM.lookuplogicalname": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "_owninguser_value@odata.type": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "_owninguser_value": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "statecode@OData.Community.Display.V1.FormattedValue": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "statecode": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "statuscode@OData.Community.Display.V1.FormattedValue": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "statuscode": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_quantity@OData.Community.Display.V1.FormattedValue": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_quantity@odata.type": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_quantity": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "_createdby_value@OData.Community.Display.V1.FormattedValue": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "_createdby_value@Microsoft.Dynamics.CRM.lookuplogicalname": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "_createdby_value@odata.type": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "_createdby_value": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_urgency@OData.Community.Display.V1.FormattedValue": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_urgency": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "_ownerid_value@OData.Community.Display.V1.FormattedValue": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "_ownerid_value@Microsoft.Dynamics.CRM.associatednavigationproperty": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "_ownerid_value@Microsoft.Dynamics.CRM.lookuplogicalname": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "_ownerid_value@odata.type": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "_ownerid_value": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_requestid@odata.type": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_requestid": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "modifiedon@OData.Community.Display.V1.FormattedValue": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "modifiedon@odata.type": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "modifiedon": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "cra66_attachment": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "_modifiedby_value@OData.Community.Display.V1.FormattedValue": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "_modifiedby_value@Microsoft.Dynamics.CRM.lookuplogicalname": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "_modifiedby_value@odata.type": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "_modifiedby_value": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "versionnumber@OData.Community.Display.V1.FormattedValue": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "versionnumber@odata.type": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "versionnumber": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "createdon@OData.Community.Display.V1.FormattedValue": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "createdon@odata.type": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "createdon": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "cra66_batchupload@OData.Community.Display.V1.FormattedValue": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "cra66_batchupload": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_name": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "owningbusinessunit@odata.associationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "owningbusinessunit@odata.navigationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "ownerid@odata.associationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "ownerid@odata.navigationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "createdby@odata.associationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "createdby@odata.navigationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "createdonbehalfby@odata.associationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "createdonbehalfby@odata.navigationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "modifiedby@odata.associationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "modifiedby@odata.navigationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "modifiedonbehalfby@odata.associationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "modifiedonbehalfby@odata.navigationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "owninguser@odata.associationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "owninguser@odata.navigationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "owningteam@odata.associationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "owningteam@odata.navigationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_request_SyncErrors@odata.associationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_request_SyncErrors@odata.navigationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_request_DuplicateMatchingRecord@odata.associationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_request_DuplicateMatchingRecord@odata.navigationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_request_DuplicateBaseRecord@odata.associationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_request_DuplicateBaseRecord@odata.navigationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_request_AsyncOperations@odata.associationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_request_AsyncOperations@odata.navigationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_request_MailboxTrackingFolders@odata.associationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_request_MailboxTrackingFolders@odata.navigationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_request_UserEntityInstanceDatas@odata.associationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_request_UserEntityInstanceDatas@odata.navigationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_request_ProcessSession@odata.associationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_request_ProcessSession@odata.navigationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_request_BulkDeleteFailures@odata.associationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_request_BulkDeleteFailures@odata.navigationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_request_PrincipalObjectAttributeAccesses@odata.associationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_request_PrincipalObjectAttributeAccesses@odata.navigationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_Resource@odata.associationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_Resource@odata.navigationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_County@odata.associationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_County@odata.navigationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_State@odata.associationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_State@odata.navigationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_request_FileAttachments@odata.associationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "rgex_request_FileAttachments@odata.navigationLink": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "Download_a_file_or_an_image": {
+              "runAfter": {
+                "Parse_JSON": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "4bc799d3-a75b-483a-8277-311c642f4455"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_commondataserviceforapps",
+                  "operationId": "GetEntityFileImageFieldContent",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                },
+                "parameters": {
+                  "entityName": "msrex_requests",
+                  "recordId": "@outputs('Get_a_row_by_ID')?['body/msrex_requestid']",
+                  "fileImageFieldName": "cr85b_attachment"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "FileContent": {
+              "runAfter": {
+                "Download_a_file_or_an_image": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "17067d04-4536-4bea-917d-31f555820331"
+              },
+              "type": "Compose",
+              "inputs": "@decodeBase64(body('Download_a_file_or_an_image')?['$content'])"
+            },
+            "SplitFileContent": {
+              "runAfter": {
+                "FileContent": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "67940547-d235-4498-b6da-8d5e8b0525fb"
+              },
+              "type": "Compose",
+              "inputs": "@split(outputs('FileContent'),decodeUriComponent('%0A'))"
+            },
+            "Apply_to_each": {
+              "foreach": "@skip(outputs('SplitFileContent'),1)",
+              "actions": {
+                "SplitLinesForJson": {
+                  "runAfter": {},
+                  "metadata": {
+                    "operationMetadataId": "da5a7916-f55a-4359-8046-062f7197f11b"
+                  },
+                  "type": "Compose",
+                  "inputs": "@split(item(), ',')"
+                },
+                "RequestsItemsJson": {
+                  "runAfter": {
+                    "SplitLinesForJson": [
+                      "Succeeded"
+                    ]
+                  },
+                  "metadata": {
+                    "operationMetadataId": "d96bd3b5-f313-4819-885b-afc0017eb250"
+                  },
+                  "type": "Compose",
+                  "inputs": {
+                    "Name": "@outputs('SplitLinesForJson')?[0]",
+                    "Request Summary": "@outputs('SplitLinesForJson')?[1]",
+                    "Organization Name": "@outputs('SplitLinesForJson')?[2]",
+                    "Request Quantity": "@outputs('SplitLinesForJson')?[3]",
+                    "Request Quantity Units": "@outputs('SplitLinesForJson')?[4]",
+                    "Location": "@outputs('SplitLinesForJson')?[5]",
+                    "Request Priority": "@outputs('SplitLinesForJson')?[6]",
+                    "Address": "@outputs('SplitLinesForJson')?[7]",
+                    "City": "@outputs('SplitLinesForJson')?[8]",
+                    "State": "@outputs('SplitLinesForJson')?[9]",
+                    "Zip Code": "@outputs('SplitLinesForJson')?[10]"
+                  }
+                },
+                "JsonRecord": {
+                  "runAfter": {
+                    "RequestsItemsJson": [
+                      "Succeeded"
+                    ]
+                  },
+                  "metadata": {
+                    "operationMetadataId": "ddaf7f9c-4d4a-4c2d-99bb-05d53c30bed1"
+                  },
+                  "type": "ParseJson",
+                  "inputs": {
+                    "content": "@outputs('RequestsItemsJson')",
+                    "schema": {
+                      "type": "object",
+                      "properties": {
+                        "Name": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "Request Summary": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "Organization Name": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "Request Quantity": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "Request Quantity Units": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "Location": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "Request Priority": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "Address": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "City": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "State": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "Zip Code": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                "If_Record_has_content": {
+                  "actions": {
+                    "Set_variable": {
+                      "runAfter": {},
+                      "metadata": {
+                        "operationMetadataId": "c9f80a2f-2c4b-4c5e-bd0e-cf13edba4b88"
+                      },
+                      "type": "SetVariable",
+                      "inputs": {
+                        "name": "QuantityFl",
+                        "value": "@float(body('JsonRecord')?['Request Quantity'])"
+                      }
+                    },
+                    "Create_Request_Record": {
+                      "runAfter": {
+                        "Set_variable": [
+                          "Succeeded"
+                        ]
+                      },
+                      "metadata": {
+                        "operationMetadataId": "6a6a79c6-4ce2-4fc7-8326-79c81d1ae8e5"
+                      },
+                      "type": "OpenApiConnection",
+                      "inputs": {
+                        "host": {
+                          "connectionName": "shared_commondataserviceforapps",
+                          "operationId": "CreateRecord",
+                          "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                        },
+                        "parameters": {
+                          "entityName": "msrex_requests",
+                          "item/msrex_name": "@body('JsonRecord')?['Name']",
+                          "item/cr85b_batchuploadyesno": false,
+                          "item/msrex_location_city": "@body('JsonRecord')?['City']",
+                          "item/msrex_location_state": "@body('JsonRecord')?['State']",
+                          "item/msrex_requestquantity": "@variables('QuantityFl')",
+                          "item/msrex_requestsummary": "@body('JsonRecord')?['Description']"
+                        },
+                        "authentication": "@parameters('$authentication')"
+                      }
+                    }
+                  },
+                  "runAfter": {
+                    "JsonRecord": [
+                      "Succeeded"
+                    ]
+                  },
+                  "expression": {
+                    "not": {
+                      "equals": [
+                        "@body('JsonRecord')?['Name']",
+                        "@null"
+                      ]
+                    }
+                  },
+                  "metadata": {
+                    "operationMetadataId": "b33ad541-d287-452f-a19a-db51ec29f413"
+                  },
+                  "type": "If"
+                }
+              },
+              "runAfter": {
+                "SplitFileContent": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "5ccf45f9-d73c-484d-b35b-0bbba2497cd4"
+              },
+              "type": "Foreach"
+            }
+          },
+          "runAfter": {
+            "Get_a_row_by_ID": [
+              "Succeeded"
+            ]
+          },
+          "expression": {
+            "equals": [
+              "@triggerOutputs()?['body/cr85b_batchuploadyesno']",
+              true
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "72223dde-47f1-4b9e-83cd-1f643ac381fe"
+          },
+          "type": "If"
+        },
+        "Initialize_FilePathnameStr": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "7bb356bc-dbed-463a-9f8f-68610f18e36e"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "FilePathnameStr",
+                "type": "string",
+                "value": "/CUSEC/"
+              }
+            ]
+          }
+        },
+        "Initialize_QuantityFloat": {
+          "runAfter": {
+            "Initialize_FilePathnameStr": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "cf7cd3c8-2801-40c7-8a06-faa26f61b56f"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "QuantityFl",
+                "type": "float",
+                "value": 0
+              }
+            ]
+          }
+        },
+        "Get_a_row_by_ID": {
+          "runAfter": {
+            "Initialize_QuantityFloat": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "98563544-07ba-4860-8667-728972665fef"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "msrex_requests",
+              "recordId": "@triggerOutputs()?['body/msrex_requestid']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "outputs": {}
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

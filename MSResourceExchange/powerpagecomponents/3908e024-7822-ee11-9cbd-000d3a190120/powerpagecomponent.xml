@@ -1,0 +1,14 @@
+<powerpagecomponent powerpagecomponentid="3908e024-7822-ee11-9cbd-000d3a190120">
+  <content>{"display_name":"Profile/MarketPhone","type":756150000,"value":"Phone"}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Profile/MarketPhone</name>
+  <powerpagecomponenttype>7</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <powerpagesitelanguageid>
+    <powerpagesitelanguageid>26f7d230-7822-ee11-9cbd-000d3a190120</powerpagesitelanguageid>
+  </powerpagesitelanguageid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

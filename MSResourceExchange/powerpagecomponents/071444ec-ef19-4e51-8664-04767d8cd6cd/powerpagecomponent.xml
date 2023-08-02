@@ -1,0 +1,30 @@
+<powerpagecomponent powerpagecomponentid="071444ec-ef19-4e51-8664-04767d8cd6cd">
+  <content>{
+  "lcid": 1033,
+  "entityname": "msrex_request",
+  "formname": "Requests main form",
+  "mode": 100000002,
+  "onsuccess": "756150000",
+  "hideformonsuccess": true,
+  "redirectwebpage": null,
+  "redirecturl": null,
+  "captcharequired": true,
+  "showcaptchaforauthenticatedusers": true,
+  "entitypermissionsenabled": true,
+  "attachfilemaxsize": null,
+  "entitysourcetype": "756150001",
+  "recordidquerystringparametername": "id",
+  "geolocation_maptype": 756150000,
+  "entityFormMetadatas": [],
+  "successmessage": "[{\"LCID\":1033,\"Value\":\"\"}]",
+  "attachfilelabel": "[{\"LCID\":1033,\"Value\":\"\"}]"
+}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Requests</name>
+  <powerpagecomponenttype>15</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

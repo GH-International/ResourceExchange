@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_msrex_offers" />
+  <EntityRelationship Name="business_unit_msrex_request" />
+  <EntityRelationship Name="business_unit_msrex_resources" />
+  <EntityRelationship Name="FileAttachment_msrex_Request_cr85b_Attachment" />
+  <EntityRelationship Name="lk_msrex_offers_createdby" />
+  <EntityRelationship Name="lk_msrex_offers_modifiedby" />
+  <EntityRelationship Name="lk_msrex_request_createdby" />
+  <EntityRelationship Name="lk_msrex_request_modifiedby" />
+  <EntityRelationship Name="lk_msrex_resources_createdby" />
+  <EntityRelationship Name="lk_msrex_resources_modifiedby" />
+  <EntityRelationship Name="msrex_Account_Account_Contact" />
+  <EntityRelationship Name="msrex_Account_Account_msrex_Offers" />
+  <EntityRelationship Name="msrex_Account_Account_msrex_Request" />
+  <EntityRelationship Name="msrex_Offers_msrex_Offers_msrex_Resources" />
+  <EntityRelationship Name="msrex_Request_msrex_Request_msrex_Resourc" />
+  <EntityRelationship Name="owner_msrex_offers" />
+  <EntityRelationship Name="owner_msrex_request" />
+  <EntityRelationship Name="owner_msrex_resources" />
+  <EntityRelationship Name="team_msrex_offers" />
+  <EntityRelationship Name="team_msrex_request" />
+  <EntityRelationship Name="team_msrex_resources" />
+  <EntityRelationship Name="user_msrex_offers" />
+  <EntityRelationship Name="user_msrex_request" />
+  <EntityRelationship Name="user_msrex_resources" />
+</EntityRelationships>

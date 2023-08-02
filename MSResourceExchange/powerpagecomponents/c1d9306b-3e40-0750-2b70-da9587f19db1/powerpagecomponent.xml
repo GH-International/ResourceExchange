@@ -1,0 +1,30 @@
+<powerpagecomponent powerpagecomponentid="c1d9306b-3e40-0750-2b70-da9587f19db1">
+  <content>{
+  "displayorder": 2,
+  "pagetemplateid": "5e619c24-7822-ee11-9cbd-000d3a1c0c13",
+  "parentpageid": "841a0d1d-c991-b2b2-c1bc-f92c07bda41c",
+  "partialurl": "Batch-Upload",
+  "isroot": false,
+  "rootwebpageid": "1406df6d-4a52-fd3f-b27d-48273cc1d8df",
+  "title": "Batch Upload",
+  "summary": "&lt;p&gt;This is a sample landing page designed to be a starting point for your website&lt;/p&gt;",
+  "copy": "&lt;div class=\"row sectionBlockLayout sectionPrimaryColor text-left\" style=\"display: flex; flex-wrap: wrap; height: 15px; padding: 8px; margin: 0px;\"&gt;&lt;div class=\"container\" style=\"display: flex; flex-wrap: wrap;\"&gt;&lt;/div&gt;&lt;/div&gt;\n&lt;div class=\"row sectionBlockLayout text-left\" style=\"display: flex; flex-wrap: wrap; min-height: 361px; padding: 8px; margin: 0px;\"&gt;\n  &lt;div class=\"container\" style=\"display: flex; flex-wrap: wrap;\"&gt;\n    &lt;div class=\"col-md-12 columnBlockLayout\" style=\"flex-grow: 1; min-width: 250px; word-break: break-word; display: flex; flex-direction: column;\"&gt;\n      &lt;h2&gt;Resource Requests – Batch Upload Process&lt;/h2&gt;\n      &lt;p&gt;​Enter a title for your batch upload. Ensure that you save the file in a CSV (comma separated values) format. Please use the template provided&amp;nbsp;&lt;a href=\"https://github.com/GH-International/ResourceExchange/raw/main/BatchUploadTemplate.xlsx\" value=\"https://github.com/GH-International/ResourceExchange/raw/main/BatchUploadTemplate.xlsx\" class=\"anchor-inherit-styles anchor-hover-color-color3\" style=\"font-weight: 600;\"&gt;here&lt;/a&gt;&amp;nbsp;to download file formatting requirements and a template.&lt;/p&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"row sectionBlockLayout text-left\" style=\"display: flex; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px;\"&gt;\n  &lt;div class=\"container\" style=\"padding: 0px; display: flex; flex-wrap: wrap;\"&gt;&lt;div class=\"col-md-12 columnBlockLayout\" style=\"flex-grow: 1; display: flex; flex-direction: column; min-width: 250px; word-break: break-word;\"&gt;{% webform name: 'Batch Upload Process' %}&lt;/div&gt;&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"row sectionBlockLayout text-left\" style=\"display: flex; flex-wrap: wrap; min-height: 100px; padding: 8px; margin: 0px;\"&gt;\n  &lt;div class=\"container\" style=\"display: flex; flex-wrap: wrap;\"&gt;&lt;div class=\"col-md-12 columnBlockLayout\" style=\"flex-grow: 1; min-width: 250px; word-break: break-word; display: flex; flex-direction: column;\"&gt;&lt;/div&gt;&lt;/div&gt;\n&lt;/div&gt;\n",
+  "publishingstateid": "1823d82c-7822-ee11-9cbd-000d3a1c017f",
+  "enablerating": false,
+  "enabletracking": false,
+  "excludefromsearch": false,
+  "hiddenfromsitemap": true,
+  "sharedpageconfiguration": false
+}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Batch Upload</name>
+  <powerpagecomponenttype>2</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <powerpagesitelanguageid>
+    <powerpagesitelanguageid>26f7d230-7822-ee11-9cbd-000d3a190120</powerpagesitelanguageid>
+  </powerpagesitelanguageid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

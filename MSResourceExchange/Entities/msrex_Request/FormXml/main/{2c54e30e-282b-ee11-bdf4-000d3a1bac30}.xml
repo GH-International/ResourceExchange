@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{2c54e30e-282b-ee11-bdf4-000d3a1bac30}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{4a05ef3d-167f-46cf-88fb-84eb807012d6}" IsUserDefined="1" labelid="{180129da-1e38-47eb-8f31-700cc9f7b28d}" name="Batch Upload">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{3be5bf74-86e4-446b-96f2-07d3aa206f70}" labelid="{da910eee-ee81-4f0c-acd9-77e6e38d68f3}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{174f93a5-38d6-4f15-b806-e2d525643a52}" labelid="{cf217254-bfd0-44ca-8e9c-46ca028f3b10}">
+                        <labels>
+                          <label description="Request Name" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msrex_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3d4679b0-2045-4c3a-9d2c-cf0ab8c2807e}" locklevel="0" colspan="1" rowspan="1" labelid="{ce37b4dc-702e-4d40-947b-319b58542d69}" visible="false">
+                        <labels>
+                          <label description="Request Status" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_requeststatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="msrex_requeststatus" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d7a052d6-e7f1-449b-aa6d-f54473d00eb9}" locklevel="0" colspan="1" rowspan="1" visible="false" labelid="{6a12aece-b351-4c5d-b3a2-f21b6f5b6f17}">
+                        <labels>
+                          <label description="Request Summary" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_requestsummary" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="msrex_requestsummary" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b4131b1c-ac8f-4f81-bee5-74c663d632c9}" locklevel="0" colspan="1" rowspan="1" visible="false" labelid="{e24cb257-1283-4aef-8b28-bd846f2dcf79}">
+                        <labels>
+                          <label description="Organization" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_account" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msrex_account" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1d013802-e010-4e22-8811-5a687f32f045}" locklevel="0" colspan="1" rowspan="1" visible="false" labelid="{726c1d58-4ac7-4782-bfff-4b75ab5eb427}">
+                        <labels>
+                          <label description="Request Quantity" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_requestquantity" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="msrex_requestquantity" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{32abcadf-b055-4f85-b861-93193c0e1548}" locklevel="0" colspan="1" rowspan="1" visible="false" labelid="{c4620020-94a8-46eb-abd0-5a38c8548158}">
+                        <labels>
+                          <label description="Request Quantity Units" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_requestquantityunits" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="msrex_requestquantityunits" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c84ee29a-2ad0-4171-95ca-4f043b474af3}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Request Priority" languagecode="1033" />
+                        </labels>
+                        <control id="new_requestpriority" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="new_requestpriority" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{709afb87-8f1f-41eb-802b-258f9130c3a9}" locklevel="0" colspan="1" rowspan="1" labelid="{2dccaca6-7a9e-4484-a96d-89f8b599588c}" visible="false">
+                        <labels>
+                          <label description="Location" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_location" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="msrex_location" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b907b92e-c7b8-40c4-bf31-14a5e23eb6ce}" locklevel="0" colspan="1" rowspan="1" labelid="{7fc74085-f5fe-47a9-b9aa-96015979aab0}" visible="false">
+                        <labels>
+                          <label description="Location: Address" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_location_address" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="msrex_location_address" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f301f6c8-66e8-4ec9-a8cc-172fdf948cc2}" locklevel="0" colspan="1" rowspan="1" labelid="{9ad1ba0d-91b0-47d2-8951-b85e92e14289}" visible="false">
+                        <labels>
+                          <label description="Location: City" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_location_city" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="msrex_location_city" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{28fa8ad0-412c-4c0e-b429-5b34917827af}" locklevel="0" colspan="1" rowspan="1" labelid="{50dd50cb-da7b-4d2b-a2d6-50dc3f0b0d46}" visible="false">
+                        <labels>
+                          <label description="Location: State" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_location_state" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="msrex_location_state" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{46073f30-6711-47a4-aa8e-e4e0532494be}" locklevel="0" colspan="1" rowspan="1" labelid="{9c97c478-8968-43b3-b47a-fbe1a2389e4b}" availableforphone="true" visible="false">
+                        <labels>
+                          <label description="Location: Zipcode" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_location_zipcode" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="msrex_location_zipcode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3af51a1a-4af5-4360-a47b-4bc539f542a0}" labelid="{9cf0026d-48f2-44d9-b45f-5c1f3c8d2cb9}" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7dd4f379-e63c-4b43-8f71-ae5d30fde0e3}" locklevel="0" colspan="1" rowspan="1" labelid="{5ba73c09-3baa-442a-bfb0-e2552d178b34}">
+                        <labels>
+                          <label description="Batch Upload (Yes/No)" languagecode="1033" />
+                        </labels>
+                        <control id="cr85b_batchuploadyesno" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cr85b_batchuploadyesno" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7530b3eb-d1f8-4a76-b274-83459a76cf4e}" locklevel="0" colspan="1" rowspan="1" labelid="{285538b3-a18e-4dc9-a117-ecebe0f898fd}">
+                        <labels>
+                          <label description="Attachment" languagecode="1033" />
+                        </labels>
+                        <control id="cr85b_attachment" classid="{0A7FF475-B016-4687-9CE5-042BFDBD6519}" datafieldname="cr85b_attachment" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{27ff0880-125f-418a-b2e4-57acf551f01e}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Request Priority" languagecode="1033" />
+                        </labels>
+                        <control id="new_requestpriority" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="new_requestpriority" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{c3ee116a-209b-4ca8-a056-1cee829b520a}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{7ad13742-5c4e-4bfe-8080-5fd9665ec4ef}" showlabel="false" labelid="{433589e2-fb0a-471c-9a13-cff47f2a773b}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{4e39700c-3407-4986-9071-541c9c438f3f}" showlabel="false" labelid="{afdcfc4d-83ae-46b4-b7d0-cb829dd41d7d}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{9ccafff6-1e68-4fc0-8631-c6e6ac5adb8e}" showlabel="false" labelid="{e5ac9411-0340-4b94-8549-c1eacaaf3b94}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{f8257274-6b1a-4088-a79a-1d91bc044240}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{fa492f84-bc76-4a16-acf7-05744c05a6e3}" showlabel="false" labelid="{4f956d66-ed5a-43cc-9a14-1092dad47fe9}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{52a45f57-114d-429e-8244-847146d941d2}" showlabel="false" labelid="{d1205f88-decc-40f3-8bbc-0c226916a15a}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{31bb60ad-0bd1-40a7-bbe8-0a80934baa7d}" showlabel="false" labelid="{e75c816b-1bd9-477d-b604-8b03307b5c19}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="5" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Batch Upload Form" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="view the records in this Request table" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,30 @@
+<powerpagecomponent powerpagecomponentid="96bb2ed5-1dbf-c535-8bcd-a3a8f2e42d28">
+  <content>{
+  "displayorder": 5,
+  "pagetemplateid": "5e619c24-7822-ee11-9cbd-000d3a1c0c13",
+  "parentpageid": "2f619c24-7822-ee11-9cbd-000d3a1c0c13",
+  "partialurl": "Offers",
+  "isroot": false,
+  "rootwebpageid": "48450ba6-acd4-dd39-4888-f503d2721f25",
+  "title": "Offers",
+  "summary": "&lt;p&gt;This is a sample landing page designed to be a starting point for your website&lt;/p&gt;",
+  "copy": "&lt;div class=\"row sectionBlockLayout sectionPrimaryColor text-left\" style=\"display: flex; flex-wrap: wrap; height: 15px; padding: 8px; margin: 0px;\"&gt;&lt;div class=\"container\" style=\"display: flex; flex-wrap: wrap;\"&gt;&lt;/div&gt;&lt;/div&gt;\n&lt;div class=\"row sectionBlockLayout text-left\" style=\"display: flex; flex-wrap: wrap; min-height: 361px; padding: 8px; margin: 0px;\"&gt;\n  &lt;div class=\"container\" style=\"display: flex; flex-wrap: wrap;\"&gt;\n    &lt;div class=\"col-md-12 columnBlockLayout\" style=\"flex-grow: 1; min-width: 310px; word-break: break-word; display: flex; flex-direction: column;\"&gt;&lt;h3 style=\"text-align: left;\"&gt;Active Resource Offers are listed in the table below. Use the search feature or click the column headers to search the offers.&lt;/h3&gt;&lt;/div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"row sectionBlockLayout text-left\" style=\"display: flex; flex-wrap: wrap; margin: 0px; min-height: auto; padding: 8px;\"&gt;\n  &lt;div class=\"container\" style=\"padding: 0px; display: flex; flex-wrap: wrap;\"&gt;&lt;div class=\"col-md-12 columnBlockLayout\" style=\"flex-grow: 1; display: flex; flex-direction: column; min-width: 310px; word-break: break-word;\"&gt;{% include 'entity_list' key: 'Active Offers' %}&lt;/div&gt;&lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=\"row sectionBlockLayout text-left\" style=\"display: flex; flex-wrap: wrap; min-height: 100px; padding: 8px; margin: 0px;\"&gt;\n  &lt;div class=\"container\" style=\"display: flex; flex-wrap: wrap;\"&gt;\n    &lt;div class=\"col-md-12 columnBlockLayout\" style=\"flex-grow: 1; min-width: 310px; word-break: break-word; display: flex; flex-direction: column;\"&gt;&lt;h3&gt;Do you have a commodity, equipment or service that you can offer to the community?&lt;/h3&gt;&lt;/div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n",
+  "publishingstateid": "1823d82c-7822-ee11-9cbd-000d3a1c017f",
+  "enablerating": false,
+  "enabletracking": false,
+  "excludefromsearch": false,
+  "hiddenfromsitemap": true,
+  "sharedpageconfiguration": false
+}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Offers</name>
+  <powerpagecomponenttype>2</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <powerpagesitelanguageid>
+    <powerpagesitelanguageid>26f7d230-7822-ee11-9cbd-000d3a190120</powerpagesitelanguageid>
+  </powerpagesitelanguageid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

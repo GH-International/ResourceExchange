@@ -1,0 +1,27 @@
+<powerpagecomponent powerpagecomponentid="6ec60e5a-5f2d-ee11-bdf4-000d3a1ba9cd">
+  <content>{
+  "savechangeswarningonclose": false,
+  "progressindicatorignorelaststep": false,
+  "progressindicatorprependstepnum": false,
+  "progressindicatorposition": 756150000,
+  "progressindicatortype": 756150000,
+  "progressindicatorenabled": false,
+  "multiplerecordsperuserpermitted": true,
+  "startnewsessiononload": false,
+  "authenticationrequired": false,
+  "editexistingrecordpermitted": true,
+  "startstep": "cca371b6-5f2d-ee11-bdf4-000d3a1ba9cd",
+  "webFormSteps": [
+    "cca371b6-5f2d-ee11-bdf4-000d3a1ba9cd",
+    "6b2fcaab-df83-46e6-8bd2-16127f76e515"
+  ]
+}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Batch Upload Process</name>
+  <powerpagecomponenttype>19</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

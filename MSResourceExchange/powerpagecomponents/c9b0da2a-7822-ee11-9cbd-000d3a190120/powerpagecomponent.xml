@@ -1,0 +1,11 @@
+<powerpagecomponent powerpagecomponentid="c9b0da2a-7822-ee11-9cbd-000d3a190120">
+  <content>{"source":"{% extends 'Layout 2 Column Wide Left' %}\r\r{% block main %}\r  {% include 'Page Copy' %}\r  \r  {% if page.adx_entitylist %}\r    {% include 'entity_list' key: page.adx_entitylist.id %}\r  {% endif %}\r  \r  {% if page.adx_entityform %}\r    {% entityform id: page.adx_entityform.id %}\r  {% endif %}\r  \r  {% if page.adx_webform %}\r    {% webform id: page.adx_webform.id %}\r  {% endif %}\r  \r  &lt;div class=\"page-metadata clearfix\"&gt;\r    {% editable snippets \"Social Share Widget Code Page Bottom\" type: 'text' %}\r  &lt;/div&gt;\r{% endblock %}\r\r{% block aside %}\r  {% include \"Weblink List Group\" weblink_set_name: \"Secondary Navigation\" showdescriptions: true %}\r  {% include \"poll\" poll_placement_name: \"Sidebar\" %}\r  {% include \"ad\" ad_placement_name: \"Sidebar Bottom\" %}\r{% endblock %}"}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Page</name>
+  <powerpagecomponenttype>8</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

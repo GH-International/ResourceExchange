@@ -1,0 +1,19 @@
+<powerpagecomponent powerpagecomponentid="d09e8bb8-9c0e-6a39-b5d6-8efe4ce82204">
+  <content>{
+  "webpageid": "48450ba6-acd4-dd39-4888-f503d2721f25",
+  "right": 2,
+  "scope": 1,
+  "adx_webpageaccesscontrolrule_webrole": [
+    "c907e024-7822-ee11-9cbd-000d3a190120",
+    "b012972a-7822-ee11-9cbd-000d3a1c0c13"
+  ]
+}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Restrict Read on Offers</name>
+  <powerpagecomponenttype>10</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

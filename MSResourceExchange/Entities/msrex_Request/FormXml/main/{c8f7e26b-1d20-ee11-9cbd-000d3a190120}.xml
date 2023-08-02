@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{c8f7e26b-1d20-ee11-9cbd-000d3a190120}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{4a05ef3d-167f-46cf-88fb-84eb807012d6}" IsUserDefined="1" labelid="{6f88404c-e297-4ff7-a0bb-e187510bb458}">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{3be5bf74-86e4-446b-96f2-07d3aa206f70}" labelid="{de7c3f84-d79e-4c8b-9efe-7314a33bda36}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{174f93a5-38d6-4f15-b806-e2d525643a52}" labelid="{7769dae8-dee1-439a-b86f-c2aa638b67ba}" visible="true">
+                        <labels>
+                          <label description="Request Name" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msrex_name" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9dfc92ed-a723-4041-815c-196496811a06}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Created By" languagecode="1033" />
+                        </labels>
+                        <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e4c6e8d1-9a01-4e3f-a65d-573fa072ffd2}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Organization Name" languagecode="1033" />
+                        </labels>
+                        <control id="msresour_organizationname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="msresour_organizationname" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8415cb4b-b8cf-4a7a-83a7-e6ea05a41beb}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Request Required By" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_requestrequiredby" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="msrex_requestrequiredby" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fcf6ce76-c1e6-451c-aee5-7320122bf9b7}" locklevel="0" colspan="1" rowspan="1" labelid="{94ae2741-261d-4d20-98a1-d42635f5cf82}">
+                        <labels>
+                          <label description="Location" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_location" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="msrex_location" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{886d0fdf-1216-48f4-9c23-bbb1568ba595}" locklevel="0" colspan="1" rowspan="1" labelid="{fe3acba9-f919-4eba-96d6-e8030c19a17f}">
+                        <labels>
+                          <label description="Request Summary" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_requestsummary" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="msrex_requestsummary" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dc370bb8-db6b-4135-9f74-516869d18bf0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Request Status" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_requeststatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="msrex_requeststatus" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a8e60c5c-053b-4c13-8914-b17b611f913d}" locklevel="0" colspan="1" rowspan="1" labelid="{4d67ff09-d266-4921-8d8d-720ba777d65f}" visible="false">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="statecode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7accbd89-ba69-4471-8df1-61db5ecd6522}" locklevel="0" colspan="1" rowspan="1" labelid="{18744c7b-1065-4d5c-8f74-f19056c6944e}" showlabel="true">
+                        <labels>
+                          <label description="Can you commit a resource related to this request?" languagecode="1033" />
+                        </labels>
+                        <control id="cr85b_commitresource" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cr85b_commitresource" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{434125dc-44c3-484e-8443-8f0a18f38446}" locklevel="0" colspan="1" rowspan="3" labelid="{be5ac997-8a5e-4d2d-a324-f34f34958d4e}">
+                        <labels>
+                          <label description="Provide any details related to your offer here, this will be provided to the Requestor." languagecode="1033" />
+                        </labels>
+                        <control id="cr85b_commitdetails" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cr85b_commitdetails" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row>
+                      <cell id="{3af51a1a-4af5-4360-a47b-4bc539f542a0}" labelid="{8091b122-804d-470f-bcf0-2ae1468fb602}" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c634edec-5498-4f86-b6ea-f1e87302e4a0}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Batch Upload (Yes/No)" languagecode="1033" />
+                        </labels>
+                        <control id="cr85b_batchuploadyesno" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cr85b_batchuploadyesno" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b9925ee0-b181-471b-94cf-3555fc9c8f51}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Attachment" languagecode="1033" />
+                        </labels>
+                        <control id="cr85b_attachment" classid="{0A7FF475-B016-4687-9CE5-042BFDBD6519}" datafieldname="cr85b_attachment" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{c3ee116a-209b-4ca8-a056-1cee829b520a}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{7ad13742-5c4e-4bfe-8080-5fd9665ec4ef}" showlabel="false" labelid="{a0853370-9794-4a7f-906e-846ba8fe94f8}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{4e39700c-3407-4986-9071-541c9c438f3f}" showlabel="false" labelid="{b6cd918e-b68f-4437-9f8a-416687091192}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{9ccafff6-1e68-4fc0-8631-c6e6ac5adb8e}" showlabel="false" labelid="{06a6beef-0d6f-4d00-80cb-61e5f11bd854}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{f8257274-6b1a-4088-a79a-1d91bc044240}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{fa492f84-bc76-4a16-acf7-05744c05a6e3}" showlabel="false" labelid="{fe080a15-36cd-4cdb-a488-4fc103b0b2a7}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{52a45f57-114d-429e-8244-847146d941d2}" showlabel="false" labelid="{787698c4-56e8-4d6b-9317-91f780f4ff55}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{31bb60ad-0bd1-40a7-bbe8-0a80934baa7d}" showlabel="false" labelid="{6cfa2dc4-452a-44c6-ae33-d0c482e8b79d}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="4" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+      <Navigation>
+        <NavBar>
+          <NavBarByRelationshipItem Area="Info" Show="false" RelationshipName="msrex_Request_msrex_Request_msrex_Resourc" Id="nav_msrex_Request_msrex_Request_msrex_Resourc" Sequence="10000">
+            <Titles>
+              <Title Text="Resources" LCID="1033" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
+      </Navigation>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Commit Resource" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Commit resource to an open request" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,30 @@
+<powerpagecomponent powerpagecomponentid="772a8fb3-affb-422b-81b1-f95785c86f47">
+  <content>{
+  "entityname": "Child - Organization",
+  "entitylogicalname": "account",
+  "scope": 756150003,
+  "append": true,
+  "appendto": false,
+  "delete": false,
+  "read": true,
+  "create": true,
+  "write": true,
+  "parentrelationship": "msrex_Account_Account_msrex_Request",
+  "parententitypermission": "87e1cf61-847a-49e7-9106-05dd48b9c1e8",
+  "contactrelationship": null,
+  "accountrelationship": null,
+  "childTablePermissions": [],
+  "adx_entitypermission_webrole": [
+    "c907e024-7822-ee11-9cbd-000d3a190120",
+    "b012972a-7822-ee11-9cbd-000d3a1c0c13"
+  ]
+}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Child - Organization</name>
+  <powerpagecomponenttype>18</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

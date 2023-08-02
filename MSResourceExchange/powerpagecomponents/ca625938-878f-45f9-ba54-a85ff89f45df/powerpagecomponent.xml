@@ -1,0 +1,32 @@
+<powerpagecomponent powerpagecomponentid="ca625938-878f-45f9-ba54-a85ff89f45df">
+  <content>{
+  "lcid": 1033,
+  "entityname": "msrex_request",
+  "formname": "Requests main form",
+  "mode": 100000000,
+  "onsuccess": 756150000,
+  "hideformonsuccess": true,
+  "redirectwebpage": null,
+  "redirecturl": null,
+  "captcharequired": false,
+  "showcaptchaforauthenticatedusers": false,
+  "entitypermissionsenabled": true,
+  "attachfile": false,
+  "attachfilerestrictaccept": false,
+  "attachfileaccept": "*/*",
+  "attachfilemaxsize": null,
+  "entitysourcetype": null,
+  "recordidquerystringparametername": null,
+  "geolocation_maptype": 756150000,
+  "attachfileallowmultiple": false,
+  "attachfilelabel": "[{\"LCID\":1033,\"Value\":\"Upload batch request file\"}]"
+}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Requests main form</name>
+  <powerpagecomponenttype>15</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

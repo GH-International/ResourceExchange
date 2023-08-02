@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{16860c56-7905-ee11-8f6e-000d3a190120}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{8925dac7-939e-4806-a0ee-365395c20d66}" IsUserDefined="1" labelid="{1b03ee25-b190-49fa-a517-210f0a702b18}">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{7f413be6-b8d0-4921-adff-7adf76a19f07}" labelid="{1a4d9af7-0ff0-4fce-9996-4a4e55f95492}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{1e98809d-de03-44ff-8ff4-7ae6e1a6826f}" labelid="{30bf99be-0905-4c3b-8822-29b4ec9a75aa}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msrex_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a31cc1eb-eb91-4e1d-99cf-12613597ce20}" labelid="{873e6a57-2f17-4774-be5e-7d5bbe9fb189}">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f2194b9a-7b5a-4975-a177-e4fed0f1d751}" locklevel="0" colspan="1" rowspan="1" labelid="{cf2e0ebd-3132-47b4-af9c-1441edca21aa}">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="statecode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ca5f9f2d-7676-40c0-91ab-3c3198665410}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Offers" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_offers" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msrex_offers" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1547e9be-f5d1-4ba5-bb93-6fbf7c34d9e5}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="NIMS-ID" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_nimsid" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="msrex_nimsid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{184bb4e6-68f1-48c8-83b1-48bd2b2b9cd1}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Requests" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_request" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="msrex_request" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0ebbf3eb-305a-4b75-b503-39359decb555}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Resource Description" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_resourcedescription" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="msrex_resourcedescription" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{94fe7e5c-01fa-4718-9da9-97a25f317929}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Resource Type" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_resourcetype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="msrex_resourcetype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f25ec01e-1bec-4a66-9be8-e01c1fc640c6}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control id="statuscode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="statuscode" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{8acf3660-ee3d-476f-bcd2-90fcc441817e}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{caccf53e-78de-4a12-9ca3-5d365719601f}" showlabel="false" labelid="{a896fd1d-6cba-46c1-a428-e3e3509ce5d6}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{e30ec6d2-7554-47e8-95d8-a65cd209634d}" showlabel="false" labelid="{567cf736-b946-4a55-966e-7828711878f8}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{918f9c99-d260-4580-b92f-594aef9c18d7}" showlabel="false" labelid="{295e241f-511e-42ac-8cc9-5917a1179df9}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{d1818670-5c55-481e-b412-1a6e7d6c9edc}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{e433b06d-4479-414c-aa70-76dab49657bb}" showlabel="false" labelid="{46c34570-b5b8-4c08-a27b-d2389244401e}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{c00ea06d-758e-4f41-a5ea-5d867807b906}" showlabel="false" labelid="{012a77bc-cce5-4927-b970-28102e5d9131}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{7f6163ce-9823-4257-bc50-7faced55fedf}" showlabel="false" labelid="{11539226-66ff-4004-ae45-4bae8889c8b7}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="1" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Resource" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="collects resources" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

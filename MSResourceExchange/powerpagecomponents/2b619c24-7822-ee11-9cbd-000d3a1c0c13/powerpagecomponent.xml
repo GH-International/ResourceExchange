@@ -1,0 +1,14 @@
+<powerpagecomponent powerpagecomponentid="2b619c24-7822-ee11-9cbd-000d3a1c0c13">
+  <content>{"display_name":"Account/Set Password/Set Password Button Text","type":756150000,"value":"Set Password"}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Account/SetPassword/SetPasswordButtonText</name>
+  <powerpagecomponenttype>7</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <powerpagesitelanguageid>
+    <powerpagesitelanguageid>26f7d230-7822-ee11-9cbd-000d3a190120</powerpagesitelanguageid>
+  </powerpagesitelanguageid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

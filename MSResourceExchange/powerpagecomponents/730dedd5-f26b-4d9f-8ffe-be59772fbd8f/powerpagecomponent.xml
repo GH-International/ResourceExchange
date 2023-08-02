@@ -1,0 +1,28 @@
+<powerpagecomponent powerpagecomponentid="730dedd5-f26b-4d9f-8ffe-be59772fbd8f">
+  <content>{
+  "lcid": 1033,
+  "entityname": "msrex_request",
+  "formname": "Commit Resource",
+  "mode": 100000001,
+  "onsuccess": 756150000,
+  "hideformonsuccess": true,
+  "redirectwebpage": null,
+  "redirecturl": null,
+  "captcharequired": true,
+  "showcaptchaforauthenticatedusers": true,
+  "entitypermissionsenabled": true,
+  "attachfilemaxsize": null,
+  "entitysourcetype": 756150001,
+  "recordidquerystringparametername": "id",
+  "geolocation_maptype": 756150000,
+  "attachfile": false
+}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Edit Request Form</name>
+  <powerpagecomponenttype>15</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

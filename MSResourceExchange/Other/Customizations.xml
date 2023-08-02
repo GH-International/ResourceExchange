@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImportExportXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Entities />
+  <Roles />
+  <Workflows />
+  <FieldSecurityProfiles />
+  <Templates />
+  <IsvConfig>
+    <configuration version="3.0.0000.0">
+      <Root />
+      <ServiceManagement>
+        <AppointmentBook>
+          <SmoothScrollLimit>2000</SmoothScrollLimit>
+          <TimeBlocks>
+            <TimeBlock EntityType="4214" StatusCode="1" CssClass="ganttBlockServiceActivityStatus1" />
+            <TimeBlock EntityType="4214" StatusCode="2" CssClass="ganttBlockServiceActivityStatus2" />
+            <TimeBlock EntityType="4214" StatusCode="3" CssClass="ganttBlockServiceActivityStatus3" />
+            <TimeBlock EntityType="4214" StatusCode="4" CssClass="ganttBlockServiceActivityStatus4" />
+            <TimeBlock EntityType="4214" StatusCode="6" CssClass="ganttBlockServiceActivityStatus6" />
+            <TimeBlock EntityType="4214" StatusCode="7" CssClass="ganttBlockServiceActivityStatus7" />
+            <TimeBlock EntityType="4214" StatusCode="8" CssClass="ganttBlockServiceActivityStatus8" />
+            <TimeBlock EntityType="4214" StatusCode="9" CssClass="ganttBlockServiceActivityStatus9" />
+            <TimeBlock EntityType="4214" StatusCode="10" CssClass="ganttBlockServiceActivityStatus10" />
+            <TimeBlock EntityType="4201" StatusCode="1" CssClass="ganttBlockAppointmentStatus1" />
+            <TimeBlock EntityType="4201" StatusCode="2" CssClass="ganttBlockAppointmentStatus2" />
+            <TimeBlock EntityType="4201" StatusCode="3" CssClass="ganttBlockAppointmentStatus3" />
+            <TimeBlock EntityType="4201" StatusCode="4" CssClass="ganttBlockAppointmentStatus4" />
+            <TimeBlock EntityType="4201" StatusCode="5" CssClass="ganttBlockAppointmentStatus5" />
+            <TimeBlock EntityType="4201" StatusCode="6" CssClass="ganttBlockAppointmentStatus6" />
+          </TimeBlocks>
+        </AppointmentBook>
+      </ServiceManagement>
+    </configuration>
+  </IsvConfig>
+  <RelationshipRoles />
+  <EntityMaps />
+  <EntityRelationships />
+  <OrganizationSettings>
+    <general>
+      <fullnameconventioncode>1</fullnameconventioncode>
+      <numberformat>us</numberformat>
+      <negativeformatcode>1</negativeformatcode>
+      <currencysymbol>$</currencysymbol>
+      <currencyformatcode>0</currencyformatcode>
+      <pricingdecimalprecision>2</pricingdecimalprecision>
+      <sharetopreviousowneronassign>False</sharetopreviousowneronassign>
+      <blockedattachments>ade;adp;app;asa;ashx;asmx;asp;bas;bat;cdx;cer;chm;class;cmd;com;config;cpl;crt;csh;dll;exe;fxp;hlp;hta;htr;htw;ida;idc;idq;inf;ins;isp;its;jar;js;jse;ksh;lnk;mad;maf;mag;mam;maq;mar;mas;mat;mau;mav;maw;mda;mdb;mde;mdt;mdw;mdz;msc;msh;msh1;msh1xml;msh2;msh2xml;mshxml;msi;msp;mst;ops;pcd;pif;prf;prg;printer;pst;reg;rem;scf;scr;sct;shb;shs;shtm;shtml;soap;stm;tmp;url;vb;vbe;vbs;vsmacros;vss;vst;vsw;ws;wsc;wsf;wsh</blockedattachments>
+      <getstartedpanecontentenabled>True</getstartedpanecontentenabled>
+      <ispresenceenabled>True</ispresenceenabled>
+      <isautosaveenabled>True</isautosaveenabled>
+      <globalhelpurlenabled>False</globalhelpurlenabled>
+      <globalappendurlparametersenabled>False</globalappendurlparametersenabled>
+      <istextwrapenabled>True</istextwrapenabled>
+      <enablelivepersonacarduci>True</enablelivepersonacarduci>
+      <allowlegacydialogsembedding>True</allowlegacydialogsembedding>
+    </general>
+    <customization>
+      <isappmode>False</isappmode>
+    </customization>
+  </OrganizationSettings>
+  <optionsets />
+  <CustomControls />
+  <AppModuleSiteMaps />
+  <AppModules />
+  <EntityDataProviders />
+  <connectionreferences>
+    <connectionreference connectionreferencelogicalname="msresour_sharedcommondataserviceforapps_91470">
+      <connectionreferencedisplayname>Microsoft Dataverse MSResourceExchange-91470</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="msresour_sharedcommondataserviceforapps_dba57">
+      <connectionreferencedisplayname>Microsoft Dataverse MSResourceExchange-dba57</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="msrex_sharedcommondataserviceforapps_13867">
+      <connectionreferencedisplayname>Microsoft Dataverse MSResourceExchange-13867</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="new_sharedcommondataserviceforapps_d636c">
+      <connectionreferencedisplayname>Microsoft Dataverse NYCDOHMH-d636c</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="new_sharedteams_8c820">
+      <connectionreferencedisplayname>Microsoft Teams</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_teams</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+    <connectionreference connectionreferencelogicalname="new_sharedteams_f2173">
+      <connectionreferencedisplayname>Microsoft Teams</connectionreferencedisplayname>
+      <connectorid>/providers/Microsoft.PowerApps/apis/shared_teams</connectorid>
+      <iscustomizable>1</iscustomizable>
+      <statecode>0</statecode>
+      <statuscode>1</statuscode>
+    </connectionreference>
+  </connectionreferences>
+  <Languages>
+    <Language>1033</Language>
+  </Languages>
+</ImportExportXml>

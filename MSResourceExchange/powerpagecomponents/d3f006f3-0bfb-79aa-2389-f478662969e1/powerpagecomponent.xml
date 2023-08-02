@@ -1,0 +1,21 @@
+<powerpagecomponent powerpagecomponentid="d3f006f3-0bfb-79aa-2389-f478662969e1">
+  <content>{
+  "displayorder": 5,
+  "weblinksetid": "bb12972a-7822-ee11-9cbd-000d3a1c0c13",
+  "pageid": "48450ba6-acd4-dd39-4888-f503d2721f25",
+  "publishingstateid": "1823d82c-7822-ee11-9cbd-000d3a1c017f",
+  "displaypagevalidation": false,
+  "displayimageonly": false,
+  "displaypagechildlinks": false,
+  "openinnewwindow": false,
+  "robotsfollowlink": true
+}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Offers</name>
+  <powerpagecomponenttype>5</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

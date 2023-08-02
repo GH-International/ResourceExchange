@@ -1,0 +1,18 @@
+<powerpagesites>
+  <powerpagesite powerpagesiteid="24f7d230-7822-ee11-9cbd-000d3a190120">
+    <content>{
+  "defaultlanguage": "26f7d230-7822-ee11-9cbd-000d3a190120",
+  "footerwebtemplateid": "7a12972a-7822-ee11-9cbd-000d3a1c0c13",
+  "headerwebtemplateid": "d1b0da2a-7822-ee11-9cbd-000d3a190120",
+  "statecode": 0,
+  "statuscode": 1,
+  "website_language": 1033
+}</content>
+    <datamodelversion>2.0</datamodelversion>
+    <iscustomizable>1</iscustomizable>
+    <name>DemoResExchange - site-5rves</name>
+    <primarydomainname>site-5rves.powerappsportals.com</primarydomainname>
+    <statecode>0</statecode>
+    <statuscode>1</statuscode>
+  </powerpagesite>
+</powerpagesites>

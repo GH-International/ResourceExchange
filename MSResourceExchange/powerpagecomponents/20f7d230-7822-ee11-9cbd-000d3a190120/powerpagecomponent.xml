@@ -1,0 +1,11 @@
+<powerpagecomponent powerpagecomponentid="20f7d230-7822-ee11-9cbd-000d3a190120">
+  <content>{"enablerating":false,"enabletracking":false,"excludefromsearch":false,"feedbackpolicy":756150000,"hiddenfromsitemap":false,"isroot":true,"pagetemplateid":"5e619c24-7822-ee11-9cbd-000d3a1c0c13","parentpageid":"2f619c24-7822-ee11-9cbd-000d3a1c0c13","partialurl":"default-offline-page","publishingstateid":"1823d82c-7822-ee11-9cbd-000d3a1c017f","sharedpageconfiguration":false,"title":"Default Offline Page"}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Default Offline Page</name>
+  <powerpagecomponenttype>2</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>

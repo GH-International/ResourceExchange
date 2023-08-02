@@ -1,0 +1,18 @@
+<powerpagecomponent powerpagecomponentid="26619c24-7822-ee11-9cbd-000d3a1c0c13">
+  <content>{
+  "display_name": "Mobile Header",
+  "type": 756150001,
+  "value": "&lt;a href=\"~/\"&gt;&lt;img src=\"https://cusec-hub.maps.arcgis.com/sharing/rest/content/items/c5285d32c07b40338fc54d5ab0dcecaa/data\" alt=\"P4 Resource Exchange\" style=\"width: auto; height: 32px;\"&gt;&lt;span class=\"ml-2\" style=\"position: relative; top: 2px;\"&gt;P4 Resource Exchange&lt;/span&gt;&lt;/a&gt;"
+}</content>
+  <iscustomizable>1</iscustomizable>
+  <name>Mobile Header</name>
+  <powerpagecomponenttype>7</powerpagecomponenttype>
+  <powerpagesiteid>
+    <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
+  </powerpagesiteid>
+  <powerpagesitelanguageid>
+    <powerpagesitelanguageid>26f7d230-7822-ee11-9cbd-000d3a190120</powerpagesitelanguageid>
+  </powerpagesitelanguageid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</powerpagecomponent>
