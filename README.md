@@ -66,24 +66,18 @@ include:
 
     f.  Do you have your tenant ID handy?
 
-***Now that we've satisfied the pre-requisites, we're ready to move
-on!***
+***Now that we've satisfied the pre-requisites, we're ready to move on!***
 
-2.  Access Solution on Github here: [shawkghi/ResourceExhange
-    (github.com)](https://github.com/shawkghi/ResourceExhange)
+2.  Download the Solution on this Repo: [MS ResourceExchange.zip](https://github.com/GH-International/ResourceExchange/raw/main/MSResourceExchange.zip)
 
-![A screenshot of a computer Description automatically
-generated](media/image1.png){width="6.5in"
-height="3.9583333333333335in"}
 
 3.  Download the solution (.zip file) from Github.
 
 4.  Import solution zip file into a production-type environment in
     PowerApps.
 
-![A screenshot of a computer Description automatically
-generated](media/image2.png){width="6.5in"
-height="3.7194444444444446in"}
+![image](https://github.com/GH-International/ResourceExchange/assets/527590/50e6e833-bc1b-412e-b423-04e4d8b16141)
+
 
 *Note: it may take some time (30min-1 hour) for solution to be fully
 functional*
@@ -96,25 +90,22 @@ Once you deploy the solution, the Site will initially be named 'demo
 resource exchange'. We recommend you rename the site to something more
 relevant to your organization or event.
 
-![A screenshot of a computer Description automatically
-generated](media/image3.png){width="5.683582677165354in"
-height="2.353585958005249in"}
+![image](https://github.com/GH-International/ResourceExchange/assets/527590/ee979761-12d2-43b0-8679-b458115ca83a)
+
 
 a.  Navigate to the Power Pages Home
     ([https://make.powerpages.microsoft.com)](https://make.powerpages.microsoft.com)a)
     and ensure that your Production environment is selected. Go to
     Inactive Sites and select Reactivate.
 
-![A screenshot of a computer Description automatically
-generated](media/image4.png){width="6.5in"
-height="2.2958333333333334in"}
+![image](https://github.com/GH-International/ResourceExchange/assets/527590/9aa68285-7d4a-4d0d-990b-c89fd3a6426c)
+
 
 b.  You will be prompted to update the website name and address. Rename
     the website name and address and click 'Done'.
 
-![A screenshot of a computer Description automatically
-generated](media/image5.png){width="6.5in"
-height="2.5743055555555556in"}
+![image](https://github.com/GH-International/ResourceExchange/assets/527590/42976eb6-ab03-4cfc-a6f5-21c523f4ee3a)
+
 
 2.  **Update references to the old site and domain name in the Power
     Pages settings.**
@@ -122,47 +113,41 @@ height="2.5743055555555556in"}
     a.  Go to Power Pages Management and select Websites from the menu
         on the left navigation panel.
 
-![A screenshot of a computer Description automatically
-generated](media/image6.png){width="6.5in" height="2.93125in"}
+![image](https://github.com/GH-International/ResourceExchange/assets/527590/c638011c-e5ae-4376-8db0-54da876cb782)
+
 
 b.  Change the **Primary Domain Name prefix** to the desired website URL
     that you defined in step 1.B.
 
-![A screenshot of a computer Description automatically
-generated](media/image7.png){width="6.5in" height="3.183333333333333in"}
+![image](https://github.com/GH-International/ResourceExchange/assets/527590/f3fa4601-5889-4cb4-baf5-dd7107d61723)
+
 
 c.  Click on the Site Settings section on the left navigation panel,
     update the **Authentication/Registration/LoginButtonAuthentication
     Type** by updating the existing string that follows the trailing
     backslash with your tenant ID.
-
-![A screenshot of a computer Description automatically
-generated](media/image8.png){width="6.5in" height="3.11875in"}
+    
+![image](https://github.com/GH-International/ResourceExchange/assets/527590/83692327-c47c-46bb-96c1-36f01d6f0633)
 
 d.  Update the **HTTP/X-Frame Options**, change the prefix in the
     'allow-from' value to your domain name from step 1-B:
 
-![A screenshot of a computer Description automatically
-generated](media/image9.png){width="6.5in"
-height="3.0729166666666665in"}
+![image](https://github.com/GH-International/ResourceExchange/assets/527590/f595990b-4fb6-4caf-87f7-d99cc3ef222d)
+
 
 3.  **Restart the Site and Go Live!**
 
     a.  Go to Portal Platform admin center and select **Restart Site.**
 
-![A screenshot of a computer Description automatically
-generated](media/image10.png){width="6.5in"
-height="3.1055555555555556in"}
+![image](https://github.com/GH-International/ResourceExchange/assets/527590/b1e0fadb-bebb-4844-9258-43b571927595)
+
 
 a.  Select the **Convert to Production** button.
 
-![A screenshot of a computer Description automatically
-generated](media/image11.png){width="6.5in"
-height="4.079166666666667in"}
+![image](https://github.com/GH-International/ResourceExchange/assets/527590/401cfc88-776f-41bf-9b7e-90f6a3a1c60d)
 
-![A screenshot of a computer Description automatically
-generated](media/image12.png){width="4.360713035870516in"
-height="2.5991896325459316in"}
+![image](https://github.com/GH-International/ResourceExchange/assets/527590/25f0322a-91c6-4924-870d-707a2ab0829a)
+
 
 4.  **Update Power Automate Flows**
 
@@ -172,9 +157,8 @@ height="2.5991896325459316in"}
 
 **\
 \
-**![A screenshot of a computer Description automatically
-generated](media/image13.png){width="6.5in"
-height="3.7270833333333333in"}
+![image](https://github.com/GH-International/ResourceExchange/assets/527590/75cd88b1-961e-4b3c-9aec-65557a54b5ab)
+
 
 b.  Select **Edit \> Edit with Designer**
 
@@ -183,9 +167,8 @@ c.  Select the action named **Post message in a chat or Channel**
 d.  Change the **Team** and **Channel names to desired locations** in
     your Microsoft Teams environment where you want the updates posted.
 
-![A screenshot of a computer Description automatically
-generated](media/image14.png){width="6.5in"
-height="5.516666666666667in"}
+![image](https://github.com/GH-International/ResourceExchange/assets/527590/3355da79-0b3b-48fe-b93c-ec717f7e8b2d)
+
 
 # Updating the Solution
 
@@ -195,6 +178,5 @@ height="5.516666666666667in"}
 
 2.  Select 'Update' for the Solution Action in the Advanced settings.
 
-![A screenshot of a computer Description automatically
-generated](media/image15.png){width="6.5in"
-height="4.915972222222222in"}
+![image](https://github.com/GH-International/ResourceExchange/assets/527590/b70452cb-a17c-4604-a6bd-3002a63ebe12)
+
