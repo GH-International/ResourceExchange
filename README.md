@@ -48,9 +48,12 @@ DEPLOYMENT GUIDE
 
 ![image](https://github.com/GH-International/ResourceExchange/assets/527590/50e6e833-bc1b-412e-b423-04e4d8b16141)
 
-
 *Note: it may take 30-60 minutes for solution to be fully functional*
 
+4. Once the solution is imported, click the **Publish all Customizations** link on the main menu.
+   ![image](https://github.com/GH-International/ResourceExchange/assets/527590/e91fde0a-06ac-4d6b-8e64-59f1e6db74ab)
+
+ 
 ## Configure the Solution
 
 1.  **Rename the Power Pages Site:**
