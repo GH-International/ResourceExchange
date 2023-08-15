@@ -15,40 +15,30 @@ DEPLOYMENT GUIDE
 -   Microsoft Teams
 -   Azure Active Directory
 
-# Prerequisites:
-
-The Resource Exchange capability has a number of prerequisites which must be met in order to deploy the solution. These prerequisites include:
-
-1.  User deploying the solution must have an [account with permissions to manage environment](https://learn.microsoft.com/en-us/power-platform/admin/control-user-access).
-
-2.  Solution must be deployed to a [Production-type environment](https://learn.microsoft.com/en-us/power-platform/admin/environments-overview).
-
-3.  [Enhanced Data Model](https://learn.microsoft.com/en-us/power-pages/admin/enhanced-data-model) must enabled for the environment.
-
-4.  [Power App *per app* license](https://learn.microsoft.com/en-us/power-platform/admin/about-powerapps-perapp) must be enabled for environment.
-
-5.  [Microsoft Dataverse database](https://learn.microsoft.com/en-us/power-platform/admin/create-database) must be added to the production environment.
-
-6.  Must have the [tenant ID](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/how-to-find-tenant)
-    for the Azure tenant handy.
 
 # Installing & Configuring the Solution: 
 
 ## Deploy The Solution
 
-1.  Check that you're ready to deploy the solution:
+1.  Check these pre-requisites first to make sure that you are ready to deploy the solution:
 
-    a.  Do you have a Production environment in Power Apps where you can deploy the solution?  [Click here](https://learn.microsoft.com/en-us/power-platform/admin/environments-overview) for more information about creating a Production Environment.
+    a.  Do you have a Production environment in Power Apps where you can deploy the solution?  
+    [Click here](https://learn.microsoft.com/en-us/power-platform/admin/environments-overview) for more information about creating a Production Environment.
 
-    b.  Do you have permissions to manage the Production Environment?  If not, or your not sure, [click here](https://learn.microsoft.com/en-us/power-platform/admin/control-user-access) to find out.
+    b.  Do you have permissions to manage the Production Environment?  
+    If not, or your not sure, [click here](https://learn.microsoft.com/en-us/power-platform/admin/control-user-access) to find out.
 
-    c.  Is the Enhanced Data Model enabled on the Production environment where you are deploying the solution? If you're not sure, [click here](https://learn.microsoft.com/en-us/power-platform/admin/environments-overview) to find out how to check, or [here](https://learn.microsoft.com/en-us/power-pages/admin/enhanced-data-model#enable-the-enhanced-data-model-in-an-environment) to learn how to convert to the Enhanced Data Model. ***Note, as of August 2023, the Enhanced Data Model is still in 'preview' and can take from 20-40minutes to complete.***
+    c.  Is the Enhanced Data Model enabled on the Production environment where you are deploying the solution? 
+    If you're not sure, [click here](https://learn.microsoft.com/en-us/power-platform/admin/environments-overview) to find out how to check, or [here](https://learn.microsoft.com/en-us/power-pages/admin/enhanced-data-model#enable-the-enhanced-data-model-in-an-environment) to learn how to convert to the Enhanced Data Model. *Note, as of August 2023, the Enhanced Data Model is still in 'preview'. It may take approximately 10-30 minutes to enable within your environment.*
 
-    d.  Is a Power App *per app* license applied to the Production environment where you are deploying the solution? If not, follow [these instructions](https://learn.microsoft.com/en-us/power-platform/admin/about-powerapps-perapp) to add a Power App license.
+    d.  Is a Power App *per app* license applied to the Production environment where you are deploying the solution? 
+    If not, follow [these instructions](https://learn.microsoft.com/en-us/power-platform/admin/about-powerapps-perapp) to add a Power App license.
 
-    e.  Have you added the Microsoft Dataverse database to the Production Environment? [Click here](https://learn.microsoft.com/en-us/power-platform/admin/create-database) to find out how to add the Dataverse database to the Production Environment.
+    e.  Have you added the Microsoft Dataverse database to the Production Environment? 
+    [Click here](https://learn.microsoft.com/en-us/power-platform/admin/create-database) to find out how to add the Dataverse database to the Production Environment.
 
-    f.  Do you have your tenant ID handy? Click [here](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/how-to-find-tenant) to find out how to access your tenant id.
+    f.  Do you have your tenant ID handy? 
+    Click [here](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/how-to-find-tenant) to find out how to access your tenant id.
 
 ***Now that we've satisfied the pre-requisites, we're ready to move on!***
 
@@ -59,7 +49,7 @@ The Resource Exchange capability has a number of prerequisites which must be met
 ![image](https://github.com/GH-International/ResourceExchange/assets/527590/50e6e833-bc1b-412e-b423-04e4d8b16141)
 
 
-*Note: it may take some time (30min-1 hour) for solution to be fully functional*
+*Note: it may take 30-60 minutes for solution to be fully functional*
 
 ## Configure the Solution
 
@@ -120,8 +110,7 @@ a.  Select the **Convert to Production** button.
     a.  Navigate to the **Cloud flows** section of the Solution and select flow named **When Resource Committed -\> Post Message in
         Teams.**
 
-**\
-\
+
 ![image](https://github.com/GH-International/ResourceExchange/assets/527590/75cd88b1-961e-4b3c-9aec-65557a54b5ab)
 
 
@@ -142,4 +131,5 @@ d.  Change the **Team** and **Channel names to desired locations** in your Micro
 2.  Select 'Update' for the Solution Action in the Advanced settings.
 
 ![image](https://github.com/GH-International/ResourceExchange/assets/527590/b70452cb-a17c-4604-a6bd-3002a63ebe12)
+
 
