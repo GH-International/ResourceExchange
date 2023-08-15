@@ -1,10 +1,8 @@
-# ResourceExchange
-ThPower Platform solution for tracking resource requests and offers.
+# Resource Exchange DEPLOYMENT GUIDE
 
-Resource Exchange Capability\
+The Resource Exchange capability is based on Microsoft’s Disaster Response Data Sharing Accelerator program will enable individuals involved in emergency response or recovery to rapidly negotiate matches between requests and offers for assistance. 
+![image](https://github.com/GH-International/ResourceExchange/assets/527590/6db274e6-773c-45fd-bf56-14703bf9f1ec)
 
-
-DEPLOYMENT GUIDE
 
 # Solution Components:
 
