@@ -1,5 +1,5 @@
 # ResourceExchange
-Power Platform solution for tracking resource requests and offers.
+ThPower Platform solution for tracking resource requests and offers.
 
 Resource Exchange Capability\
 
@@ -60,7 +60,7 @@ Once you deploy the solution, the Site will initially be named 'demo resource ex
 ![image](https://github.com/GH-International/ResourceExchange/assets/527590/ee979761-12d2-43b0-8679-b458115ca83a)
 
 
-a.  Navigate to the Power Pages Home ([https://make.powerpages.microsoft.com)](https://make.powerpages.microsoft.com)a) and ensure that your Production environment is selected. Go to Inactive Sites and select Reactivate.
+a.  Navigate to the Power Pages Home ([https://make.powerpages.microsoft.com)](https://make.powerpages.microsoft.com) and ensure that your Production environment is selected. Go to Inactive Sites and select Reactivate.
 
 ![image](https://github.com/GH-International/ResourceExchange/assets/527590/9aa68285-7d4a-4d0d-990b-c89fd3a6426c)
 
@@ -107,8 +107,7 @@ a.  Select the **Convert to Production** button.
 
 4.  **Update Power Automate Flows**
 
-    a.  Navigate to the **Cloud flows** section of the Solution and select flow named **When Resource Committed -\> Post Message in
-        Teams.**
+    a.  Navigate to the **Cloud flows** section of the Solution and select flow named **When Resource Committed -\> Post Message in Teams.**
 
 
 ![image](https://github.com/GH-International/ResourceExchange/assets/527590/75cd88b1-961e-4b3c-9aec-65557a54b5ab)
@@ -125,11 +124,8 @@ d.  Change the **Team** and **Channel names to desired locations** in your Micro
 
 # Updating the Solution
 
-1.  When applying an update to the Resource Exchange Solution from Github, download the updated solution file and import the solution
-    into the same Production environment.
+1.  When applying an update to the Resource Exchange Solution from Github, download the updated solution file and import the solution into the same Production environment.
 
 2.  Select 'Update' for the Solution Action in the Advanced settings.
 
 ![image](https://github.com/GH-International/ResourceExchange/assets/527590/b70452cb-a17c-4604-a6bd-3002a63ebe12)
-
-
