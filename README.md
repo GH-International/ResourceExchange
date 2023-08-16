@@ -50,17 +50,14 @@ The Resource Exchange capability is based on Microsoft’s Disaster Response Dat
 *Note: it may take 30-60 minutes for solution to be fully functional*
 
 4. Once the solution is imported, click the **Publish all Customizations** link on the main menu.
-   ![image](https://github.com/GH-International/ResourceExchange/assets/527590/e91fde0a-06ac-4d6b-8e64-59f1e6db74ab)
+![image](https://github.com/GH-International/ResourceExchange/assets/527590/e91fde0a-06ac-4d6b-8e64-59f1e6db74ab)
 
- 
+Once you deploy the solution, the Site will initially be named 'demo resource exchange'. *Note: You will not be able to open the site listed in the solution until the following steps in the **Configure the Solution* section are followed.**
+![image](https://github.com/GH-International/ResourceExchange/assets/527590/ee979761-12d2-43b0-8679-b458115ca83a)
+
 ## Configure the Solution
 
 1.  **Rename the Power Pages Site:**
-
-Once you deploy the solution, the Site will initially be named 'demo resource exchange'. *Note: You will not be able to open it by clicking on the site listed in the solution until the following settings are configured.* 
-
-![image](https://github.com/GH-International/ResourceExchange/assets/527590/ee979761-12d2-43b0-8679-b458115ca83a)
-
 
 a.  Navigate to the Power Pages Home ([https://make.powerpages.microsoft.com)](https://make.powerpages.microsoft.com) and ensure that your Production environment is selected. Go to Inactive Sites and select Reactivate.  *Note: If you have note deployed a Power Pages site in your environment, you will be guided through a process to create a new Page before you can reactivate the Site.*
 
