@@ -1,6 +1,7 @@
 # Resource Exchange DEPLOYMENT GUIDE
 
 The Resource Exchange capability is based on Microsoft’s Disaster Response Data Sharing Accelerator program will enable individuals involved in emergency response or recovery to rapidly negotiate matches between requests and offers for assistance. 
+
 ![image](https://github.com/GH-International/ResourceExchange/assets/527590/6db274e6-773c-45fd-bf56-14703bf9f1ec)
 
 
@@ -56,12 +57,12 @@ The Resource Exchange capability is based on Microsoft’s Disaster Response Dat
 
 1.  **Rename the Power Pages Site:**
 
-Once you deploy the solution, the Site will initially be named 'demo resource exchange'. We recommend you rename the site to something more relevant to your organization or event.
+Once you deploy the solution, the Site will initially be named 'demo resource exchange'. *Note: You will not be able to open it by clicking on the site listed in the solution until the following settings are configured.* 
 
 ![image](https://github.com/GH-International/ResourceExchange/assets/527590/ee979761-12d2-43b0-8679-b458115ca83a)
 
 
-a.  Navigate to the Power Pages Home ([https://make.powerpages.microsoft.com)](https://make.powerpages.microsoft.com) and ensure that your Production environment is selected. Go to Inactive Sites and select Reactivate.
+a.  Navigate to the Power Pages Home ([https://make.powerpages.microsoft.com)](https://make.powerpages.microsoft.com) and ensure that your Production environment is selected. Go to Inactive Sites and select Reactivate.  *Note: If you have note deployed a Power Pages site in your environment, you will be guided through a process to create a new Page before you can reactivate the Site.*
 
 ![image](https://github.com/GH-International/ResourceExchange/assets/527590/9aa68285-7d4a-4d0d-990b-c89fd3a6426c)
 
