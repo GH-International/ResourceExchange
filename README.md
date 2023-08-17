@@ -21,22 +21,22 @@ The Resource Exchange capability is based on Microsoft’s Disaster Response Dat
 
 1.  Check these pre-requisites first to make sure that you are ready to deploy the solution:
 
-    a.  Do you have a Production environment in Power Apps where you can deploy the solution?  
+    1.  Do you have a Production environment in Power Apps where you can deploy the solution?  
     [Click here](https://learn.microsoft.com/en-us/power-platform/admin/environments-overview) for more information about creating a Production Environment.
 
-    b.  Do you have permissions to manage the Production Environment?  
+    2.  Do you have permissions to manage the Production Environment?  
     If not, or your not sure, [click here](https://learn.microsoft.com/en-us/power-platform/admin/control-user-access) to find out.
 
-    c.  Is the Enhanced Data Model enabled on the Production environment where you are deploying the solution? 
+    3.  Is the Enhanced Data Model enabled on the Production environment where you are deploying the solution? 
     If you're not sure, [click here](https://learn.microsoft.com/en-us/power-platform/admin/environments-overview) to find out how to check, or [here](https://learn.microsoft.com/en-us/power-pages/admin/enhanced-data-model#enable-the-enhanced-data-model-in-an-environment) to learn how to convert to the Enhanced Data Model. *Note, as of August 2023, the Enhanced Data Model is still in 'preview'. It may take approximately 10-30 minutes to enable within your environment.*
 
-    d.  Is a Power App *per app* license applied to the Production environment where you are deploying the solution? 
+    5.  Is a Power App *per app* license applied to the Production environment where you are deploying the solution? 
     If not, follow [these instructions](https://learn.microsoft.com/en-us/power-platform/admin/about-powerapps-perapp) to add a Power App license.
 
-    e.  Have you added the Microsoft Dataverse database to the Production Environment? 
+    6.  Have you added the Microsoft Dataverse database to the Production Environment? 
     [Click here](https://learn.microsoft.com/en-us/power-platform/admin/create-database) to find out how to add the Dataverse database to the Production Environment.
 
-    f.  Do you have your tenant ID handy? 
+    7.  Do you have your tenant ID handy? 
     Click [here](https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/how-to-find-tenant) to find out how to access your tenant id.
 
 ***Now that we've satisfied the pre-requisites, we're ready to move on!***
@@ -57,80 +57,75 @@ Once you deploy the solution, the Site will initially be named 'demo resource ex
 
 ## Configure the Solution
 
-### 1.  Rename the Power Pages Site:
-
-    a.  Navigate to the Power Pages Home ([https://make.powerpages.microsoft.com)](https://make.powerpages.microsoft.com) and ensure that your Production environment is selected. Go to Inactive Sites and select Reactivate.  *Note: If you have note deployed a Power Pages site in your environment, you will be guided through a process to create a new Page before you can reactivate the Site.*
+1. ### Rename the Power Pages Site:
+    1. Navigate to the Power Pages Home ([https://make.powerpages.microsoft.com)](https://make.powerpages.microsoft.com) and ensure that your Production environment is selected. Go to Inactive Sites and select Reactivate.  *Note: If you have note deployed a Power Pages site in your environment, you will be guided through a process to create a new Page before you can reactivate the Site.*
 
 ![image](https://github.com/GH-International/ResourceExchange/assets/527590/9aa68285-7d4a-4d0d-990b-c89fd3a6426c)
 
-
-    b.  You will be prompted to update the website name and address. Rename the website name and address and click 'Done'.
+    2. You will be prompted to update the website name and address. Rename the website name and address and click 'Done'.
 
 ![image](https://github.com/GH-International/ResourceExchange/assets/527590/42976eb6-ab03-4cfc-a6f5-21c523f4ee3a)
 
 
-### 2.  Update references to the old site and domain name in the Power Pages settings.
+2. ### Update references to the old site and domain name in the Power Pages settings.
 
-    a.  Go to Power Pages Management and select Websites from the menu on the left navigation panel.
+    1.  Go to Power Pages Management and select Websites from the menu on the left navigation panel.
 
 ![image](https://github.com/GH-International/ResourceExchange/assets/527590/c638011c-e5ae-4376-8db0-54da876cb782)
 
 
-    b.  Change the **Primary Domain Name prefix** to the desired website URL that you defined in step 1.B.
+    2.  Change the **Primary Domain Name prefix** to the desired website URL that you defined in step 1.B.
 
 ![image](https://github.com/GH-International/ResourceExchange/assets/527590/f3fa4601-5889-4cb4-baf5-dd7107d61723)
 
 
-    c.  Click on the Site Settings section on the left navigation panel, update the **Authentication/Registration/LoginButtonAuthenticationType** by updating the existing string that follows the trailing backslash with your tenant ID.
+    3.  Click on the Site Settings section on the left navigation panel, update the **Authentication/Registration/LoginButtonAuthenticationType** by updating the existing string that follows the trailing backslash with your tenant ID.
     
 ![image](https://github.com/GH-International/ResourceExchange/assets/527590/83692327-c47c-46bb-96c1-36f01d6f0633)
 
-    d.  Update the **HTTP/X-Frame Options**, change the prefix in the 'allow-from' value to your domain name from step 1-B:
+    4.  Update the **HTTP/X-Frame Options**, change the prefix in the 'allow-from' value to your domain name from step 1-B:
 
 ![image](https://github.com/GH-International/ResourceExchange/assets/527590/f595990b-4fb6-4caf-87f7-d99cc3ef222d)
 
 
-### 3.  Restart the Site and Go Live!
+3. ### Restart the Site and Go Live!
 
-    a.  Go to Portal Platform admin center and select **Restart Site.**
+    1.  Go to Portal Platform admin center and select **Restart Site.**
+   ![image](https://github.com/GH-International/ResourceExchange/assets/527590/b1e0fadb-bebb-4844-9258-43b571927595)
 
-![image](https://github.com/GH-International/ResourceExchange/assets/527590/b1e0fadb-bebb-4844-9258-43b571927595)
 
-
-    a.  Select the **Convert to Production** button.
+    2.  Select the **Convert to Production** button.
 
 ![image](https://github.com/GH-International/ResourceExchange/assets/527590/401cfc88-776f-41bf-9b7e-90f6a3a1c60d)
 
 ![image](https://github.com/GH-International/ResourceExchange/assets/527590/25f0322a-91c6-4924-870d-707a2ab0829a)
 
 
-### 4.  Update Power Automate Flows
+4. ### Update Power Automate Flows
 
-    a.  Navigate to the **Cloud flows** section of the Solution and select flow named **When Resource Committed -\> Post Message in Teams.**
+    1.  Navigate to the **Cloud flows** section of the Solution and select flow named **When Resource Committed -\> Post Message in Teams.**
+       ![image](https://github.com/GH-International/ResourceExchange/assets/527590/75cd88b1-961e-4b3c-9aec-65557a54b5ab)
 
+    3.  Select **Edit \> Edit with Designer**
 
-![image](https://github.com/GH-International/ResourceExchange/assets/527590/75cd88b1-961e-4b3c-9aec-65557a54b5ab)
+    4.  Select the action named **Post message in a chat or Channel**
 
-
-    b.  Select **Edit \> Edit with Designer**
-
-    c.  Select the action named **Post message in a chat or Channel**
-
-    d.  Change the **Team** and **Channel names to desired locations** in your Microsoft Teams environment where you want the updates posted.
+    5.  Change the **Team** and **Channel names to desired locations** in your Microsoft Teams environment where you want the updates posted.
 
 ![image](https://github.com/GH-International/ResourceExchange/assets/527590/3355da79-0b3b-48fe-b93c-ec717f7e8b2d)
 
-    e. Click 'Save' to commit the changes to the Power Automate Flow.
+    5. Click 'Save' to commit the changes to the Power Automate Flow.
 
-### 5.  Publish customizations
+5. ### Publish customizations
 Navigate back to the PowerApp Solutions page and select the **Publish all customizations** button: 
-<img width="619" alt="image" src="https://github.com/GH-International/ResourceExchange/assets/527590/269b1440-69f2-4ef5-82bb-3e2b32d9fcc5">
+<img src="https://github.com/GH-International/ResourceExchange/assets/527590/269b1440-69f2-4ef5-82bb-3e2b32d9fcc5">
 
     
 # Updating the Solution
+Follow these steps when applying an update to the Resource Exchange Solution.
 
-1.  When applying an update to the Resource Exchange Solution from Github, download the updated solution file and import the solution into the same Production environment.
+1. Download the updated solution file from Github and import the solution into the same Production environment.
 
-2.  Select 'Update' for the Solution Action in the Advanced settings.
+2. Select 'Update' for the Solution Action in the Advanced settings.
 
 ![image](https://github.com/GH-International/ResourceExchange/assets/527590/b70452cb-a17c-4604-a6bd-3002a63ebe12)
