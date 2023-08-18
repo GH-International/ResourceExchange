@@ -46,7 +46,7 @@
               "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
             },
             "parameters": {
-              "subscriptionRequest/message": 4,
+              "subscriptionRequest/message": 3,
               "subscriptionRequest/entityname": "msrex_request",
               "subscriptionRequest/scope": 4,
               "subscriptionRequest/filteringattributes": "cr85b_attachment,cr85b_batchuploadyesno"
@@ -1034,10 +1034,14 @@
                           "entityName": "msrex_requests",
                           "item/msrex_name": "@body('JsonRecord')?['Name']",
                           "item/cr85b_batchuploadyesno": false,
+                          "item/msrex_location": "@body('JsonRecord')?['Location']",
+                          "item/msrex_location_address": "@body('JsonRecord')?['Address']",
                           "item/msrex_location_city": "@body('JsonRecord')?['City']",
                           "item/msrex_location_state": "@body('JsonRecord')?['State']",
+                          "item/msrex_location_zipcode": "@body('JsonRecord')?['Zip Code']",
+                          "item/msresour_organizationname": "@body('JsonRecord')?['Organization Name']",
                           "item/msrex_requestquantity": "@variables('QuantityFl')",
-                          "item/msrex_requestsummary": "@body('JsonRecord')?['Description']"
+                          "item/msrex_requestsummary": "@body('JsonRecord')?['Request Summary']"
                         },
                         "authentication": "@parameters('$authentication')"
                       }
@@ -1051,7 +1055,7 @@
                   "expression": {
                     "not": {
                       "equals": [
-                        "@body('JsonRecord')?['Name']",
+                        "@body('JsonRecord')?['Request Summary']",
                         "@null"
                       ]
                     }
@@ -1127,7 +1131,7 @@
         },
         "Get_a_row_by_ID": {
           "runAfter": {
-            "Initialize_QuantityFloat": [
+            "Initialize_variable": [
               "Succeeded"
             ]
           },
@@ -1146,6 +1150,25 @@
               "recordId": "@triggerOutputs()?['body/msrex_requestid']"
             },
             "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Initialize_variable": {
+          "runAfter": {
+            "Initialize_QuantityFloat": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "571c6df7-755c-46f0-bac3-1f41c8fdbe6d"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "RequestName",
+                "type": "string"
+              }
+            ]
           }
         }
       },
