@@ -116,7 +116,16 @@ Once you deploy the solution, the Site will initially be named 'demo resource ex
 
     5. Click 'Save' to commit the changes to the Power Automate Flow.
 
-5. ### Publish customizations
+
+5. ### Manage Access to Power Pages
+   By default, the Power Pages site will only be accessible to administrators. Follow the steps below to provide access to users.
+    1.  On the **Setup** section of the Power Pages site, select **Site Visibility**
+![image](https://github.com/GH-International/ResourceExchange/assets/527590/17938cb4-791e-4646-93c1-4e22eb81f00e)
+
+    2.  In the **Grant Site Access** section, add all users that require access to the Resource Exchange solution.
+    3.  Click **Sync** to commit changes. 
+    
+7. ### Publish customizations
 Navigate back to the PowerApp Solutions page and select the **Publish all customizations** button: 
 <img src="https://github.com/GH-International/ResourceExchange/assets/527590/269b1440-69f2-4ef5-82bb-3e2b32d9fcc5">
 
