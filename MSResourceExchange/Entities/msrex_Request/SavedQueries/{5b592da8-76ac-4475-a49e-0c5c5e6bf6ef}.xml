@@ -14,7 +14,7 @@
           <cell name="msrex_requestsummary" width="144" />
           <cell name="msresour_organizationname" width="150" />
           <cell name="msrex_location" width="134" />
-          <cell name="statecode" width="100" />
+          <cell name="msrex_requeststatus" width="123" />
           <cell name="createdon" width="105" />
           <cell name="msresour_createdbycontact" width="164" />
           <cell name="msresour_modifiedbycontact" width="169" />
@@ -29,18 +29,18 @@
           <attribute name="msrex_name" />
           <attribute name="msrex_location" />
           <attribute name="msrex_requestsummary" />
-          <attribute name="statecode" />
           <attribute name="msresour_organizationname" />
           <attribute name="createdon" />
           <order attribute="createdon" descending="true" />
+          <attribute name="msresour_createdbycontact" />
+          <attribute name="msresour_modifiedbycontact" />
+          <attribute name="msrex_requeststatus" />
           <filter type="and">
             <condition attribute="statecode" operator="eq" value="0" />
             <condition attribute="cr85b_batchuploadyesno" operator="ne" value="1" />
             <condition attribute="msrex_requeststatus" operator="ne" value="4" />
             <condition attribute="msrex_requeststatus" operator="ne" value="3" />
           </filter>
-          <attribute name="msresour_createdbycontact" />
-          <attribute name="msresour_modifiedbycontact" />
         </entity>
       </fetch>
     </fetchxml>
