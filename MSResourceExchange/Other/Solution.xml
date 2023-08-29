@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ImportExportXml version="9.2.23072.186" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.23074.224" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>MSResourceExchange</UniqueName>
     <LocalizedNames>
       <LocalizedName description="MSResourceExchange" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.8</Version>
+    <Version>1.0.0.9</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>MSResourceExchange</UniqueName>
@@ -85,6 +85,7 @@
       <RootComponent type="1" schemaName="msrex_resources" behavior="0" />
       <RootComponent type="29" id="{110cd465-3d2e-ee11-bdf3-000d3a1c017f}" behavior="0" />
       <RootComponent type="29" id="{d1a4448a-7f2c-ee11-bdf4-000d3a190120}" behavior="0" />
+      <RootComponent type="29" id="{f39fdff4-f141-ee11-bdf3-000d3a1c0c13}" behavior="0" />
       <RootComponent type="62" schemaName="cr85b_ResourceExchangeOffers" behavior="0" />
       <RootComponent type="62" schemaName="cr85b_ResourceExchangeRequests" behavior="0" />
       <RootComponent type="80" schemaName="cr85b_ResourceExchangeOffers" behavior="0" />

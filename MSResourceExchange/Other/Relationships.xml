@@ -3,6 +3,7 @@
   <EntityRelationship Name="business_unit_msrex_offers" />
   <EntityRelationship Name="business_unit_msrex_request" />
   <EntityRelationship Name="business_unit_msrex_resources" />
+  <EntityRelationship Name="FileAttachment_msrex_Offers_msresour_Attachment" />
   <EntityRelationship Name="FileAttachment_msrex_Request_cr85b_Attachment" />
   <EntityRelationship Name="lk_msrex_offers_createdby" />
   <EntityRelationship Name="lk_msrex_offers_modifiedby" />
@@ -10,6 +11,10 @@
   <EntityRelationship Name="lk_msrex_request_modifiedby" />
   <EntityRelationship Name="lk_msrex_resources_createdby" />
   <EntityRelationship Name="lk_msrex_resources_modifiedby" />
+  <EntityRelationship Name="msresour_msrex_Offers_CreatedByContact_Contact" />
+  <EntityRelationship Name="msresour_msrex_Offers_ModifiedByContact_Contact" />
+  <EntityRelationship Name="msresour_msrex_Request_CreatedByContact_Contact" />
+  <EntityRelationship Name="msresour_msrex_Request_ModifiedByContact_Contact" />
   <EntityRelationship Name="msrex_Account_Account_Contact" />
   <EntityRelationship Name="msrex_Account_Account_msrex_Offers" />
   <EntityRelationship Name="msrex_Account_Account_msrex_Request" />

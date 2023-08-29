@@ -10,7 +10,6 @@
   "startnewsessiononload": false,
   "authenticationrequired": false,
   "editexistingrecordpermitted": true,
-  "startstep": "cca371b6-5f2d-ee11-bdf4-000d3a1ba9cd",
   "webFormSteps": [
     "cca371b6-5f2d-ee11-bdf4-000d3a1ba9cd",
     "6b2fcaab-df83-46e6-8bd2-16127f76e515"
@@ -22,6 +21,6 @@
   <powerpagesiteid>
     <powerpagesiteid>24f7d230-7822-ee11-9cbd-000d3a190120</powerpagesiteid>
   </powerpagesiteid>
-  <statecode>0</statecode>
-  <statuscode>1</statuscode>
+  <statecode>1</statecode>
+  <statuscode>2</statuscode>
 </powerpagecomponent>

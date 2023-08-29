@@ -4,7 +4,7 @@
  * change to this file will get overwritten with a theme applied using
  * Site Styling panel from Power Apps Portals.
  */
- :root {
+:root {
   --portalThemeColor1: #2E456B;
   --portalThemeColor2: #FFCA4B;
   --portalThemeColor3: #277493;
@@ -33,73 +33,73 @@
 [data-component-theme="portalThemeColor1"] {
   background-color: var(--portalThemeColor1);
   color: var(--portalThemeOnColor1); }
-  [data-component-theme="portalThemeColor1"] h1, [data-component-theme="portalThemeColor1"] h2, [data-component-theme="portalThemeColor1"] h3, [data-component-theme="portalThemeColor1"] h4, [data-component-theme="portalThemeColor1"] h5, [data-component-theme="portalThemeColor1"] h6, [data-component-theme="portalThemeColor1"] p {
+  [data-component-theme="portalThemeColor1"] h1, [data-component-theme="portalThemeColor1"] h2, [data-component-theme="portalThemeColor1"] h3, [data-component-theme="portalThemeColor1"] h4, [data-component-theme="portalThemeColor1"] h5, [data-component-theme="portalThemeColor1"] h6, [data-component-theme="portalThemeColor1"] p, [data-component-theme="portalThemeColor1"] p.smallText {
     color: var(--portalThemeOnColor1); }
 
 [data-component-theme="portalThemeColor2"] {
   background-color: var(--portalThemeColor2);
   color: var(--portalThemeOnColor2); }
-  [data-component-theme="portalThemeColor2"] h1, [data-component-theme="portalThemeColor2"] h2, [data-component-theme="portalThemeColor2"] h3, [data-component-theme="portalThemeColor2"] h4, [data-component-theme="portalThemeColor2"] h5, [data-component-theme="portalThemeColor2"] h6, [data-component-theme="portalThemeColor2"] p {
+  [data-component-theme="portalThemeColor2"] h1, [data-component-theme="portalThemeColor2"] h2, [data-component-theme="portalThemeColor2"] h3, [data-component-theme="portalThemeColor2"] h4, [data-component-theme="portalThemeColor2"] h5, [data-component-theme="portalThemeColor2"] h6, [data-component-theme="portalThemeColor2"] p, [data-component-theme="portalThemeColor2"] p.smallText {
     color: var(--portalThemeOnColor2); }
 
 [data-component-theme="portalThemeColor3"] {
   background-color: var(--portalThemeColor3);
   color: var(--portalThemeOnColor3); }
-  [data-component-theme="portalThemeColor3"] h1, [data-component-theme="portalThemeColor3"] h2, [data-component-theme="portalThemeColor3"] h3, [data-component-theme="portalThemeColor3"] h4, [data-component-theme="portalThemeColor3"] h5, [data-component-theme="portalThemeColor3"] h6, [data-component-theme="portalThemeColor3"] p {
+  [data-component-theme="portalThemeColor3"] h1, [data-component-theme="portalThemeColor3"] h2, [data-component-theme="portalThemeColor3"] h3, [data-component-theme="portalThemeColor3"] h4, [data-component-theme="portalThemeColor3"] h5, [data-component-theme="portalThemeColor3"] h6, [data-component-theme="portalThemeColor3"] p, [data-component-theme="portalThemeColor3"] p.smallText {
     color: var(--portalThemeOnColor3); }
 
 [data-component-theme="portalThemeColor4"] {
   background-color: var(--portalThemeColor4);
   color: var(--portalThemeOnColor4); }
-  [data-component-theme="portalThemeColor4"] h1, [data-component-theme="portalThemeColor4"] h2, [data-component-theme="portalThemeColor4"] h3, [data-component-theme="portalThemeColor4"] h4, [data-component-theme="portalThemeColor4"] h5, [data-component-theme="portalThemeColor4"] h6, [data-component-theme="portalThemeColor4"] p {
+  [data-component-theme="portalThemeColor4"] h1, [data-component-theme="portalThemeColor4"] h2, [data-component-theme="portalThemeColor4"] h3, [data-component-theme="portalThemeColor4"] h4, [data-component-theme="portalThemeColor4"] h5, [data-component-theme="portalThemeColor4"] h6, [data-component-theme="portalThemeColor4"] p, [data-component-theme="portalThemeColor4"] p.smallText {
     color: var(--portalThemeOnColor4); }
 
 [data-component-theme="portalThemeColor5"] {
   background-color: var(--portalThemeColor5);
   color: var(--portalThemeOnColor5); }
-  [data-component-theme="portalThemeColor5"] h1, [data-component-theme="portalThemeColor5"] h2, [data-component-theme="portalThemeColor5"] h3, [data-component-theme="portalThemeColor5"] h4, [data-component-theme="portalThemeColor5"] h5, [data-component-theme="portalThemeColor5"] h6, [data-component-theme="portalThemeColor5"] p {
+  [data-component-theme="portalThemeColor5"] h1, [data-component-theme="portalThemeColor5"] h2, [data-component-theme="portalThemeColor5"] h3, [data-component-theme="portalThemeColor5"] h4, [data-component-theme="portalThemeColor5"] h5, [data-component-theme="portalThemeColor5"] h6, [data-component-theme="portalThemeColor5"] p, [data-component-theme="portalThemeColor5"] p.smallText {
     color: var(--portalThemeOnColor5); }
 
 [data-component-theme="portalThemeColor6"] {
   background-color: var(--portalThemeColor6);
   color: var(--portalThemeOnColor6); }
-  [data-component-theme="portalThemeColor6"] h1, [data-component-theme="portalThemeColor6"] h2, [data-component-theme="portalThemeColor6"] h3, [data-component-theme="portalThemeColor6"] h4, [data-component-theme="portalThemeColor6"] h5, [data-component-theme="portalThemeColor6"] h6, [data-component-theme="portalThemeColor6"] p {
+  [data-component-theme="portalThemeColor6"] h1, [data-component-theme="portalThemeColor6"] h2, [data-component-theme="portalThemeColor6"] h3, [data-component-theme="portalThemeColor6"] h4, [data-component-theme="portalThemeColor6"] h5, [data-component-theme="portalThemeColor6"] h6, [data-component-theme="portalThemeColor6"] p, [data-component-theme="portalThemeColor6"] p.smallText {
     color: var(--portalThemeOnColor6); }
 
 [data-component-theme="portalThemeColor7"] {
   background-color: var(--portalThemeColor7);
   color: var(--portalThemeOnColor7); }
-  [data-component-theme="portalThemeColor7"] h1, [data-component-theme="portalThemeColor7"] h2, [data-component-theme="portalThemeColor7"] h3, [data-component-theme="portalThemeColor7"] h4, [data-component-theme="portalThemeColor7"] h5, [data-component-theme="portalThemeColor7"] h6, [data-component-theme="portalThemeColor7"] p {
+  [data-component-theme="portalThemeColor7"] h1, [data-component-theme="portalThemeColor7"] h2, [data-component-theme="portalThemeColor7"] h3, [data-component-theme="portalThemeColor7"] h4, [data-component-theme="portalThemeColor7"] h5, [data-component-theme="portalThemeColor7"] h6, [data-component-theme="portalThemeColor7"] p, [data-component-theme="portalThemeColor7"] p.smallText {
     color: var(--portalThemeOnColor7); }
 
 [data-component-theme="portalThemeColor8"] {
   background-color: var(--portalThemeColor8);
   color: var(--portalThemeOnColor8); }
-  [data-component-theme="portalThemeColor8"] h1, [data-component-theme="portalThemeColor8"] h2, [data-component-theme="portalThemeColor8"] h3, [data-component-theme="portalThemeColor8"] h4, [data-component-theme="portalThemeColor8"] h5, [data-component-theme="portalThemeColor8"] h6, [data-component-theme="portalThemeColor8"] p {
+  [data-component-theme="portalThemeColor8"] h1, [data-component-theme="portalThemeColor8"] h2, [data-component-theme="portalThemeColor8"] h3, [data-component-theme="portalThemeColor8"] h4, [data-component-theme="portalThemeColor8"] h5, [data-component-theme="portalThemeColor8"] h6, [data-component-theme="portalThemeColor8"] p, [data-component-theme="portalThemeColor8"] p.smallText {
     color: var(--portalThemeOnColor8); }
 
 [data-component-theme="portalThemeColor9"] {
   background-color: var(--portalThemeColor9);
   color: var(--portalThemeOnColor9); }
-  [data-component-theme="portalThemeColor9"] h1, [data-component-theme="portalThemeColor9"] h2, [data-component-theme="portalThemeColor9"] h3, [data-component-theme="portalThemeColor9"] h4, [data-component-theme="portalThemeColor9"] h5, [data-component-theme="portalThemeColor9"] h6, [data-component-theme="portalThemeColor9"] p {
+  [data-component-theme="portalThemeColor9"] h1, [data-component-theme="portalThemeColor9"] h2, [data-component-theme="portalThemeColor9"] h3, [data-component-theme="portalThemeColor9"] h4, [data-component-theme="portalThemeColor9"] h5, [data-component-theme="portalThemeColor9"] h6, [data-component-theme="portalThemeColor9"] p, [data-component-theme="portalThemeColor9"] p.smallText {
     color: var(--portalThemeOnColor9); }
 
 [data-component-theme="portalThemeColor10"] {
   background-color: var(--portalThemeColor10);
   color: var(--portalThemeOnColor10); }
-  [data-component-theme="portalThemeColor10"] h1, [data-component-theme="portalThemeColor10"] h2, [data-component-theme="portalThemeColor10"] h3, [data-component-theme="portalThemeColor10"] h4, [data-component-theme="portalThemeColor10"] h5, [data-component-theme="portalThemeColor10"] h6, [data-component-theme="portalThemeColor10"] p {
+  [data-component-theme="portalThemeColor10"] h1, [data-component-theme="portalThemeColor10"] h2, [data-component-theme="portalThemeColor10"] h3, [data-component-theme="portalThemeColor10"] h4, [data-component-theme="portalThemeColor10"] h5, [data-component-theme="portalThemeColor10"] h6, [data-component-theme="portalThemeColor10"] p, [data-component-theme="portalThemeColor10"] p.smallText {
     color: var(--portalThemeOnColor10); }
 
 [data-component-theme="portalThemeColor11"] {
   background-color: var(--portalThemeColor11);
   color: var(--portalThemeOnColor11); }
-  [data-component-theme="portalThemeColor11"] h1, [data-component-theme="portalThemeColor11"] h2, [data-component-theme="portalThemeColor11"] h3, [data-component-theme="portalThemeColor11"] h4, [data-component-theme="portalThemeColor11"] h5, [data-component-theme="portalThemeColor11"] h6, [data-component-theme="portalThemeColor11"] p {
+  [data-component-theme="portalThemeColor11"] h1, [data-component-theme="portalThemeColor11"] h2, [data-component-theme="portalThemeColor11"] h3, [data-component-theme="portalThemeColor11"] h4, [data-component-theme="portalThemeColor11"] h5, [data-component-theme="portalThemeColor11"] h6, [data-component-theme="portalThemeColor11"] p, [data-component-theme="portalThemeColor11"] p.smallText {
     color: var(--portalThemeOnColor11); }
 
 [data-component-theme="portalThemeColor12"] {
   background-color: var(--portalThemeColor12);
   color: var(--portalThemeOnColor12); }
-  [data-component-theme="portalThemeColor12"] h1, [data-component-theme="portalThemeColor12"] h2, [data-component-theme="portalThemeColor12"] h3, [data-component-theme="portalThemeColor12"] h4, [data-component-theme="portalThemeColor12"] h5, [data-component-theme="portalThemeColor12"] h6, [data-component-theme="portalThemeColor12"] p {
+  [data-component-theme="portalThemeColor12"] h1, [data-component-theme="portalThemeColor12"] h2, [data-component-theme="portalThemeColor12"] h3, [data-component-theme="portalThemeColor12"] h4, [data-component-theme="portalThemeColor12"] h5, [data-component-theme="portalThemeColor12"] h6, [data-component-theme="portalThemeColor12"] p, [data-component-theme="portalThemeColor12"] p.smallText {
     color: var(--portalThemeOnColor12); }
 
 body {
@@ -588,7 +588,8 @@ p,
   color: #FFFFFF; }
 
 h1.siteTitle,
-.navbar-static-top.navbar-inverse .navbar-brand a h1.siteTitle {
+.navbar-static-top.navbar-inverse .navbar-brand a h1.siteTitle,
+.navbar-static-top.navbar-inverse .navbar-brand a h1.siteTitle > span {
   display: inline;
   vertical-align: middle;
   color: #FFFFFF;

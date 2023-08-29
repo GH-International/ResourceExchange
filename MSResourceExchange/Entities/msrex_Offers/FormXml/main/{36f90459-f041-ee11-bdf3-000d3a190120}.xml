@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{36f90459-f041-ee11-bdf3-000d3a190120}</formid>
+    <IntroducedVersion>1.0.0.8</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{70ffebc2-98a2-4503-beed-626a73ba7cc4}" IsUserDefined="1" labelid="{0db6978f-716f-4ff9-b23f-9c259b5c2ad8}" name="Batch Upload">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{e39368e2-1c90-4f07-bffd-3c1524f1002b}" labelid="{7fa32f2c-a364-4ddf-b1dd-8fb9edca797a}" name="Organization">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{f0168756-ac93-42fb-b171-6341bf15c88a}" labelid="{9fbc061f-8335-4134-8072-386c0ac6a408}">
+                        <labels>
+                          <label description="Offer Name" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msrex_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bea1e071-c990-4f78-bd76-b484ad597ef7}" labelid="{710e011c-56e5-495e-acbb-75892e0f39ec}" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{94dd2150-384a-41fd-9893-5c4380fb1915}" locklevel="0" colspan="1" rowspan="1" labelid="{9bb16772-1a29-4524-a085-4828f7cb86ef}" visible="false">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="statecode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4d71b31c-c06a-468e-a0c1-6a05e6ae7ec6}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Batch Upload" languagecode="1033" />
+                        </labels>
+                        <control id="msresour_batchupload" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="msresour_batchupload" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e7ffb7ec-0184-44a9-8aeb-c8795917347d}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Attachment" languagecode="1033" />
+                        </labels>
+                        <control id="msresour_attachment" classid="{0A7FF475-B016-4687-9CE5-042BFDBD6519}" datafieldname="msresour_attachment" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{b5fbbb3b-00f6-493c-a024-e370d775d392}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{fdb0a196-ed69-4937-b5a8-80096ca48a1c}" showlabel="false" labelid="{990f9317-ce3e-4610-bea4-94de56afa135}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{4e591470-f3ad-4ac2-82f5-7a3c580cb1b6}" showlabel="false" labelid="{a79d9038-d37b-4b5d-95eb-c78aa7d93938}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{7e6cb76a-3356-4d45-a323-6d5309cf7828}" showlabel="false" labelid="{18b2c397-23f3-4c50-a21d-c3866eaa7802}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{a9682dd1-42e1-4038-8112-383aab995a15}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{03496e65-1fae-4e00-9a74-9864a8cbd544}" showlabel="false" labelid="{0e4e3c2b-c204-47d2-96bc-144fe53edda9}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{32359746-9397-4e98-8d32-f83b33a38895}" showlabel="false" labelid="{46a5195a-b7a1-463b-831d-bc667a63e679}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{677fa527-3683-498a-8b23-d758c6c1796d}" showlabel="false" labelid="{3ae4e9d4-df82-4262-9c08-f88a5476a853}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="2" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Batch Upload Offers" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Batch upload form for Offers" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

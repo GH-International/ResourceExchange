@@ -140,6 +140,22 @@
                         <control id="cr85b_attachment" classid="{0A7FF475-B016-4687-9CE5-042BFDBD6519}" datafieldname="cr85b_attachment" disabled="false" />
                       </cell>
                     </row>
+                    <row>
+                      <cell id="{7ac6e0ab-5605-44d4-967c-cf32909db90c}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Created By" languagecode="1033" />
+                        </labels>
+                        <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cb0197ae-d1a5-4557-9390-9edc7df74fc3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
                   </rows>
                 </section>
               </sections>

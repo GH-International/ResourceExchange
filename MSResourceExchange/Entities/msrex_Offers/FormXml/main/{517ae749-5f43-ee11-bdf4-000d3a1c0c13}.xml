@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{517ae749-5f43-ee11-bdf4-000d3a1c0c13}</formid>
+    <IntroducedVersion>1.0.0.8</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{70ffebc2-98a2-4503-beed-626a73ba7cc4}" IsUserDefined="1" labelid="{22447808-532c-48e4-9ffc-561904a9622b}" name="Offers" expanded="true">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{e39368e2-1c90-4f07-bffd-3c1524f1002b}" labelid="{b177855e-fe4d-4a55-ab24-125a4ff35223}" name="Organization">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{f0168756-ac93-42fb-b171-6341bf15c88a}" labelid="{af0d05ab-2537-4332-98ff-25566b8d261a}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="msrex_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bea1e071-c990-4f78-bd76-b484ad597ef7}" labelid="{33307e09-3eee-41de-93a7-072be79cf726}" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bf491a85-a598-4bc6-a476-6df73f06c05b}" locklevel="0" colspan="1" rowspan="1" labelid="{c2d64a0a-aa4e-413a-8876-dcf16230217f}">
+                        <labels>
+                          <label description="Organization Name" languagecode="1033" />
+                        </labels>
+                        <control id="msresour_organizationname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="msresour_organizationname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{76a572ae-64eb-4aaa-9f9e-98d8ac0e5c0b}" locklevel="0" colspan="1" rowspan="2" labelid="{bd141e28-d039-4294-bc78-c2bdca15441d}">
+                        <labels>
+                          <label description="Offer Summary" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_offersummary" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="msrex_offersummary" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row>
+                      <cell id="{0dec5604-a8eb-412e-a628-f9df70d454e2}" locklevel="0" colspan="1" rowspan="1" labelid="{75957df3-4de0-4019-9f76-35638c618e61}">
+                        <labels>
+                          <label description="Offer Quantity" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_offerquantity" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="msrex_offerquantity" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{82dcbbb3-8bf6-4793-945a-c9f3bdf373f3}" locklevel="0" colspan="1" rowspan="1" labelid="{afba64d7-d443-47e4-b968-faa8441c8979}">
+                        <labels>
+                          <label description="Offer Quantity Units" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_offerquantityunits" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="msrex_offerquantityunits" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5674e1ca-d496-4bab-8f07-37ab50bc6bc8}" locklevel="0" colspan="1" rowspan="1" labelid="{3d37f1b9-a0df-43ee-ab71-6cb041b1fb29}">
+                        <labels>
+                          <label description="Offer Status" languagecode="1033" />
+                        </labels>
+                        <control id="msrex_offerstatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="msrex_offerstatus" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{94dd2150-384a-41fd-9893-5c4380fb1915}" locklevel="0" colspan="1" rowspan="1" labelid="{05ac8031-0f66-4b70-936a-22aca0187a9b}">
+                        <labels>
+                          <label description="Status" languagecode="1033" />
+                        </labels>
+                        <control id="statecode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{b5fbbb3b-00f6-493c-a024-e370d775d392}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{fdb0a196-ed69-4937-b5a8-80096ca48a1c}" showlabel="false" labelid="{ba548f91-2652-4d4f-89af-248a2e5bdcd6}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{4e591470-f3ad-4ac2-82f5-7a3c580cb1b6}" showlabel="false" labelid="{739fd97c-7ba1-4461-aa67-24c56628008b}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{7e6cb76a-3356-4d45-a323-6d5309cf7828}" showlabel="false" labelid="{10b0c01f-f09b-483e-92d0-bdd9b1ca5950}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{a9682dd1-42e1-4038-8112-383aab995a15}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{03496e65-1fae-4e00-9a74-9864a8cbd544}" showlabel="false" labelid="{d0ebda38-3264-4e29-8231-160dfdeb9ade}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{32359746-9397-4e98-8d32-f83b33a38895}" showlabel="false" labelid="{e775219b-77dd-4868-8254-cfb448f2bc0f}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{677fa527-3683-498a-8b23-d758c6c1796d}" showlabel="false" labelid="{6ec51ef5-e070-429c-a479-f20e8010cd23}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="3" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Update Offer Status" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Update the status of Offers." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

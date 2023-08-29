@@ -4,7 +4,16 @@
       "shared_commondataserviceforapps": {
         "runtimeSource": "embedded",
         "connection": {
-          "connectionReferenceLogicalName": "msrex_sharedcommondataserviceforapps_13867"
+          "connectionReferenceLogicalName": "new_sharedcommondataserviceforapps_23909"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_commondataserviceforapps_2": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedcommondataserviceforapps_d636c"
         },
         "api": {
           "name": "shared_commondataserviceforapps"
@@ -13,7 +22,7 @@
       "shared_commondataserviceforapps_1": {
         "runtimeSource": "embedded",
         "connection": {
-          "connectionReferenceLogicalName": "msdyn_Dataverse"
+          "connectionReferenceLogicalName": "new_sharedcommondataserviceforapps_784b4"
         },
         "api": {
           "name": "shared_commondataserviceforapps"
@@ -47,9 +56,9 @@
             },
             "parameters": {
               "subscriptionRequest/message": 3,
-              "subscriptionRequest/entityname": "msrex_request",
+              "subscriptionRequest/entityname": "msrex_offers",
               "subscriptionRequest/scope": 4,
-              "subscriptionRequest/filteringattributes": "cr85b_attachment,cr85b_batchuploadyesno"
+              "subscriptionRequest/filteringattributes": "msresour_attachment,msresour_batchupload"
             },
             "authentication": "@parameters('$authentication')"
           }
@@ -65,7 +74,7 @@
               },
               "type": "ParseJson",
               "inputs": {
-                "content": "@body('Get_a_row_by_ID')",
+                "content": "@body('Get_a_row_by_ID_2')",
                 "schema": {
                   "type": "object",
                   "properties": {
@@ -850,9 +859,9 @@
                   "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
                 },
                 "parameters": {
-                  "entityName": "msrex_requests",
-                  "recordId": "@outputs('Get_a_row_by_ID')?['body/msrex_requestid']",
-                  "fileImageFieldName": "cr85b_attachment"
+                  "entityName": "msrex_offerses",
+                  "recordId": "@triggerOutputs()?['body/msrex_OffersId']",
+                  "fileImageFieldName": "msresour_attachment"
                 },
                 "authentication": "@parameters('$authentication')"
               }
@@ -904,16 +913,10 @@
                   "type": "Compose",
                   "inputs": {
                     "Name": "@outputs('SplitLinesForJson')?[0]",
-                    "Request Summary": "@outputs('SplitLinesForJson')?[1]",
+                    "Offer Summary": "@outputs('SplitLinesForJson')?[1]",
                     "Organization Name": "@outputs('SplitLinesForJson')?[2]",
-                    "Request Quantity": "@outputs('SplitLinesForJson')?[3]",
-                    "Request Quantity Units": "@outputs('SplitLinesForJson')?[4]",
-                    "Location": "@outputs('SplitLinesForJson')?[5]",
-                    "Request Priority": "@outputs('SplitLinesForJson')?[6]",
-                    "Address": "@outputs('SplitLinesForJson')?[7]",
-                    "City": "@outputs('SplitLinesForJson')?[8]",
-                    "State": "@outputs('SplitLinesForJson')?[9]",
-                    "Zip Code": "@outputs('SplitLinesForJson')?[10]"
+                    "Offer Quantity": "@outputs('SplitLinesForJson')?[3]",
+                    "Offer Quantity Units": "@outputs('SplitLinesForJson')?[4]"
                   }
                 },
                 "JsonRecord": {
@@ -937,7 +940,7 @@
                             "null"
                           ]
                         },
-                        "Request Summary": {
+                        "Offer Summary": {
                           "type": [
                             "string",
                             "null"
@@ -949,49 +952,13 @@
                             "null"
                           ]
                         },
-                        "Request Quantity": {
+                        "Offer Quantity": {
                           "type": [
                             "string",
                             "null"
                           ]
                         },
-                        "Request Quantity Units": {
-                          "type": [
-                            "string",
-                            "null"
-                          ]
-                        },
-                        "Location": {
-                          "type": [
-                            "string",
-                            "null"
-                          ]
-                        },
-                        "Request Priority": {
-                          "type": [
-                            "string",
-                            "null"
-                          ]
-                        },
-                        "Address": {
-                          "type": [
-                            "string",
-                            "null"
-                          ]
-                        },
-                        "City": {
-                          "type": [
-                            "string",
-                            "null"
-                          ]
-                        },
-                        "State": {
-                          "type": [
-                            "string",
-                            "null"
-                          ]
-                        },
-                        "Zip Code": {
+                        "Offer Quantity Units": {
                           "type": [
                             "string",
                             "null"
@@ -1011,17 +978,40 @@
                       "type": "SetVariable",
                       "inputs": {
                         "name": "QuantityFl",
-                        "value": "@float(body('JsonRecord')?['Request Quantity'])"
+                        "value": "@float(body('JsonRecord')?['Offer Quantity'])"
                       }
                     },
-                    "Create_Request_Record": {
+                    "List_rows": {
                       "runAfter": {
-                        "Set_variable": [
+                        "Set_variable_3": [
                           "Succeeded"
                         ]
                       },
                       "metadata": {
-                        "operationMetadataId": "6a6a79c6-4ce2-4fc7-8326-79c81d1ae8e5"
+                        "operationMetadataId": "081f924c-d9f7-469c-a704-6ee8cbe804a7"
+                      },
+                      "type": "OpenApiConnection",
+                      "inputs": {
+                        "host": {
+                          "connectionName": "shared_commondataserviceforapps_2",
+                          "operationId": "ListRecords",
+                          "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+                        },
+                        "parameters": {
+                          "entityName": "stringmaps",
+                          "$filter": "attributename eq 'msrex_offerquantityunits' and objecttypecode eq 'msrex_offers' and value eq '@{variables('OfferUnitesName')}'"
+                        },
+                        "authentication": "@parameters('$authentication')"
+                      }
+                    },
+                    "Add_a_new_row": {
+                      "runAfter": {
+                        "Apply_to_each_2": [
+                          "Succeeded"
+                        ]
+                      },
+                      "metadata": {
+                        "operationMetadataId": "2cc2250a-8f56-4106-9e23-3c78064cdf63"
                       },
                       "type": "OpenApiConnection",
                       "inputs": {
@@ -1031,20 +1021,57 @@
                           "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
                         },
                         "parameters": {
-                          "entityName": "msrex_requests",
+                          "entityName": "msrex_offerses",
                           "item/msrex_name": "@body('JsonRecord')?['Name']",
-                          "item/cr85b_batchuploadyesno": false,
+                          "item/msresour_batchupload": true,
                           "item/msresour_CreatedByContact@odata.bind": "contacts(@{body('Parse_JSON_2')?['_msresour_createdbycontact_value']})",
-                          "item/msrex_location": "@body('JsonRecord')?['Location']",
-                          "item/msrex_location_address": "@body('JsonRecord')?['Address']",
-                          "item/msrex_location_city": "@body('JsonRecord')?['City']",
-                          "item/msrex_location_state": "@body('JsonRecord')?['State']",
-                          "item/msrex_location_zipcode": "@body('JsonRecord')?['Zip Code']",
-                          "item/msresour_organizationname": "@body('JsonRecord')?['Organization Name']",
-                          "item/msrex_requestquantity": "@variables('QuantityFl')",
-                          "item/msrex_requestsummary": "@body('JsonRecord')?['Request Summary']"
+                          "item/msrex_offerquantity": "@variables('QuantityFl')",
+                          "item/msrex_offerquantityunits": "@variables('OfferUnitTableID')",
+                          "item/msrex_offerstatus": 1,
+                          "item/msrex_offersummary": "@body('JsonRecord')?['Offer Summary']",
+                          "item/msresour_organizationname": "@body('JsonRecord')?['Organization Name']"
                         },
                         "authentication": "@parameters('$authentication')"
+                      }
+                    },
+                    "Apply_to_each_2": {
+                      "foreach": "@outputs('List_rows')?['body/value']",
+                      "actions": {
+                        "Set_variable_2": {
+                          "runAfter": {},
+                          "metadata": {
+                            "operationMetadataId": "2ddd9619-4cb2-458a-a987-c2008f56f849"
+                          },
+                          "type": "SetVariable",
+                          "inputs": {
+                            "name": "OfferUnitTableID",
+                            "value": "@items('Apply_to_each_2')?['attributevalue']"
+                          }
+                        }
+                      },
+                      "runAfter": {
+                        "List_rows": [
+                          "Succeeded"
+                        ]
+                      },
+                      "metadata": {
+                        "operationMetadataId": "352d30f8-be8c-4e7b-84a6-2a7da9398afc"
+                      },
+                      "type": "Foreach"
+                    },
+                    "Set_variable_3": {
+                      "runAfter": {
+                        "Set_variable": [
+                          "Succeeded"
+                        ]
+                      },
+                      "metadata": {
+                        "operationMetadataId": "17d5e640-be31-41c2-8885-778202db45db"
+                      },
+                      "type": "SetVariable",
+                      "inputs": {
+                        "name": "OfferUnitesName",
+                        "value": "@{replace(body('JsonRecord')?['Offer Quantity Units'],decodeUriComponent('%0D'),'')}"
                       }
                     }
                   },
@@ -1056,7 +1083,7 @@
                   "expression": {
                     "not": {
                       "equals": [
-                        "@body('JsonRecord')?['Request Summary']",
+                        "@body('JsonRecord')?['Offer Quantity']",
                         "@null"
                       ]
                     }
@@ -1085,7 +1112,7 @@
           },
           "expression": {
             "equals": [
-              "@triggerOutputs()?['body/cr85b_batchuploadyesno']",
+              "@triggerOutputs()?['body/msresour_batchupload']",
               true
             ]
           },
@@ -1130,30 +1157,7 @@
             ]
           }
         },
-        "Get_a_row_by_ID": {
-          "runAfter": {
-            "Initialize_variable": [
-              "Succeeded"
-            ]
-          },
-          "metadata": {
-            "operationMetadataId": "98563544-07ba-4860-8667-728972665fef"
-          },
-          "type": "OpenApiConnection",
-          "inputs": {
-            "host": {
-              "connectionName": "shared_commondataserviceforapps",
-              "operationId": "GetItem",
-              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
-            },
-            "parameters": {
-              "entityName": "msrex_requests",
-              "recordId": "@triggerOutputs()?['body/msrex_requestid']"
-            },
-            "authentication": "@parameters('$authentication')"
-          }
-        },
-        "Initialize_variable": {
+        "Initialize_variable_OfferUnitTableID": {
           "runAfter": {
             "Initialize_QuantityFloat": [
               "Succeeded"
@@ -1166,7 +1170,49 @@
           "inputs": {
             "variables": [
               {
-                "name": "RequestName",
+                "name": "OfferUnitTableID",
+                "type": "integer"
+              }
+            ]
+          }
+        },
+        "Get_a_row_by_ID_2": {
+          "runAfter": {
+            "Initialize_variable_OfferUnitesName": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "51963709-93ef-4db3-9882-ddd53e97425a"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "msrex_offerses",
+              "recordId": "@triggerOutputs()?['body/msrex_OffersId']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Initialize_variable_OfferUnitesName": {
+          "runAfter": {
+            "Initialize_variable_OfferUnitTableID": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "571c6df7-755c-46f0-bac3-1f41c8fdbe6d"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "OfferUnitesName",
                 "type": "string"
               }
             ]
@@ -1174,16 +1220,16 @@
         },
         "Parse_JSON_2": {
           "runAfter": {
-            "Get_a_row_by_ID": [
+            "Get_a_row_by_ID_2": [
               "Succeeded"
             ]
           },
           "metadata": {
-            "operationMetadataId": "2f2584bd-613a-4533-a88a-2e7f9f0679f7"
+            "operationMetadataId": "2ff1b59d-073c-478c-814b-c6cbcb221381"
           },
           "type": "ParseJson",
           "inputs": {
-            "content": "@body('Get_a_row_by_ID')",
+            "content": "@body('Get_a_row_by_ID_2')",
             "schema": {
               "type": "object",
               "properties": {
@@ -1202,14 +1248,35 @@
                 "@@odata.editLink": {
                   "type": "string"
                 },
+                "msrex_offersid@odata.type": {
+                  "type": "string"
+                },
+                "msrex_offersid": {
+                  "type": "string"
+                },
+                "_owningbusinessunit_value@OData.Community.Display.V1.FormattedValue": {
+                  "type": "string"
+                },
+                "_owningbusinessunit_value@Microsoft.Dynamics.CRM.associatednavigationproperty": {
+                  "type": "string"
+                },
+                "_owningbusinessunit_value@Microsoft.Dynamics.CRM.lookuplogicalname": {
+                  "type": "string"
+                },
+                "_owningbusinessunit_value@odata.type": {
+                  "type": "string"
+                },
+                "_owningbusinessunit_value": {
+                  "type": "string"
+                },
+                "msresour_attachment": {
+                  "type": "string"
+                },
                 "statecode@OData.Community.Display.V1.FormattedValue": {
                   "type": "string"
                 },
                 "statecode": {
                   "type": "integer"
-                },
-                "msrex_name": {
-                  "type": "string"
                 },
                 "statuscode@OData.Community.Display.V1.FormattedValue": {
                   "type": "string"
@@ -1217,29 +1284,38 @@
                 "statuscode": {
                   "type": "integer"
                 },
-                "cr85b_attachment": {
+                "_createdby_value@OData.Community.Display.V1.FormattedValue": {
                   "type": "string"
                 },
-                "cr85b_batchuploadyesno@OData.Community.Display.V1.FormattedValue": {
+                "_createdby_value@Microsoft.Dynamics.CRM.lookuplogicalname": {
                   "type": "string"
                 },
-                "cr85b_batchuploadyesno": {
+                "_createdby_value@odata.type": {
+                  "type": "string"
+                },
+                "_createdby_value": {
+                  "type": "string"
+                },
+                "_msresour_createdbycontact_value@OData.Community.Display.V1.FormattedValue": {
+                  "type": "string"
+                },
+                "_msresour_createdbycontact_value@Microsoft.Dynamics.CRM.associatednavigationproperty": {
+                  "type": "string"
+                },
+                "_msresour_createdbycontact_value@Microsoft.Dynamics.CRM.lookuplogicalname": {
+                  "type": "string"
+                },
+                "_msresour_createdbycontact_value@odata.type": {
+                  "type": "string"
+                },
+                "_msresour_createdbycontact_value": {
+                  "type": "string"
+                },
+                "msresour_batchupload@OData.Community.Display.V1.FormattedValue": {
+                  "type": "string"
+                },
+                "msresour_batchupload": {
                   "type": "boolean"
-                },
-                "cr85b_commitresource@OData.Community.Display.V1.FormattedValue": {
-                  "type": "string"
-                },
-                "cr85b_commitresource": {
-                  "type": "boolean"
-                },
-                "createdon@OData.Community.Display.V1.FormattedValue": {
-                  "type": "string"
-                },
-                "createdon@odata.type": {
-                  "type": "string"
-                },
-                "createdon": {
-                  "type": "string"
                 },
                 "_ownerid_value@OData.Community.Display.V1.FormattedValue": {
                   "type": "string"
@@ -1265,29 +1341,14 @@
                 "modifiedon": {
                   "type": "string"
                 },
-                "versionnumber@OData.Community.Display.V1.FormattedValue": {
+                "_owninguser_value@Microsoft.Dynamics.CRM.lookuplogicalname": {
                   "type": "string"
                 },
-                "versionnumber@odata.type": {
+                "_owninguser_value@odata.type": {
                   "type": "string"
                 },
-                "versionnumber": {
-                  "type": "integer"
-                },
-                "cr85b_attachment_name": {
+                "_owninguser_value": {
                   "type": "string"
-                },
-                "msrex_requestquantityunits@OData.Community.Display.V1.FormattedValue": {
-                  "type": "string"
-                },
-                "msrex_requestquantityunits": {
-                  "type": "integer"
-                },
-                "msrex_requeststatus@OData.Community.Display.V1.FormattedValue": {
-                  "type": "string"
-                },
-                "msrex_requeststatus": {
-                  "type": "integer"
                 },
                 "_modifiedby_value@OData.Community.Display.V1.FormattedValue": {
                   "type": "string"
@@ -1301,67 +1362,34 @@
                 "_modifiedby_value": {
                   "type": "string"
                 },
-                "_msresour_createdbycontact_value@OData.Community.Display.V1.FormattedValue": {
+                "versionnumber@OData.Community.Display.V1.FormattedValue": {
                   "type": "string"
                 },
-                "_msresour_createdbycontact_value@Microsoft.Dynamics.CRM.associatednavigationproperty": {
+                "versionnumber@odata.type": {
                   "type": "string"
                 },
-                "_msresour_createdbycontact_value@Microsoft.Dynamics.CRM.lookuplogicalname": {
+                "versionnumber": {
+                  "type": "integer"
+                },
+                "msresour_attachment_name": {
                   "type": "string"
                 },
-                "_msresour_createdbycontact_value@odata.type": {
+                "createdon@OData.Community.Display.V1.FormattedValue": {
                   "type": "string"
                 },
-                "_msresour_createdbycontact_value": {
+                "createdon@odata.type": {
                   "type": "string"
                 },
-                "_createdby_value@OData.Community.Display.V1.FormattedValue": {
+                "createdon": {
                   "type": "string"
                 },
-                "_createdby_value@Microsoft.Dynamics.CRM.lookuplogicalname": {
+                "msrex_name": {
                   "type": "string"
                 },
-                "_createdby_value@odata.type": {
+                "owningbusinessunit@odata.associationLink": {
                   "type": "string"
                 },
-                "_createdby_value": {
-                  "type": "string"
-                },
-                "_owningbusinessunit_value@OData.Community.Display.V1.FormattedValue": {
-                  "type": "string"
-                },
-                "_owningbusinessunit_value@Microsoft.Dynamics.CRM.associatednavigationproperty": {
-                  "type": "string"
-                },
-                "_owningbusinessunit_value@Microsoft.Dynamics.CRM.lookuplogicalname": {
-                  "type": "string"
-                },
-                "_owningbusinessunit_value@odata.type": {
-                  "type": "string"
-                },
-                "_owningbusinessunit_value": {
-                  "type": "string"
-                },
-                "_owninguser_value@Microsoft.Dynamics.CRM.lookuplogicalname": {
-                  "type": "string"
-                },
-                "_owninguser_value@odata.type": {
-                  "type": "string"
-                },
-                "_owninguser_value": {
-                  "type": "string"
-                },
-                "msrex_requestid@odata.type": {
-                  "type": "string"
-                },
-                "msrex_requestid": {
-                  "type": "string"
-                },
-                "ownerid@odata.associationLink": {
-                  "type": "string"
-                },
-                "ownerid@odata.navigationLink": {
+                "owningbusinessunit@odata.navigationLink": {
                   "type": "string"
                 },
                 "msresour_CreatedByContact@odata.associationLink": {
@@ -1370,10 +1398,10 @@
                 "msresour_CreatedByContact@odata.navigationLink": {
                   "type": "string"
                 },
-                "owningbusinessunit@odata.associationLink": {
+                "ownerid@odata.associationLink": {
                   "type": "string"
                 },
-                "owningbusinessunit@odata.navigationLink": {
+                "ownerid@odata.navigationLink": {
                   "type": "string"
                 },
                 "createdby@odata.associationLink": {
@@ -1412,58 +1440,52 @@
                 "owningteam@odata.navigationLink": {
                   "type": "string"
                 },
-                "msrex_request_SyncErrors@odata.associationLink": {
+                "msrex_offers_SyncErrors@odata.associationLink": {
                   "type": "string"
                 },
-                "msrex_request_SyncErrors@odata.navigationLink": {
+                "msrex_offers_SyncErrors@odata.navigationLink": {
                   "type": "string"
                 },
-                "msrex_request_AsyncOperations@odata.associationLink": {
+                "msrex_offers_AsyncOperations@odata.associationLink": {
                   "type": "string"
                 },
-                "msrex_request_AsyncOperations@odata.navigationLink": {
+                "msrex_offers_AsyncOperations@odata.navigationLink": {
                   "type": "string"
                 },
-                "msrex_request_MailboxTrackingFolders@odata.associationLink": {
+                "msrex_offers_MailboxTrackingFolders@odata.associationLink": {
                   "type": "string"
                 },
-                "msrex_request_MailboxTrackingFolders@odata.navigationLink": {
+                "msrex_offers_MailboxTrackingFolders@odata.navigationLink": {
                   "type": "string"
                 },
-                "msrex_request_UserEntityInstanceDatas@odata.associationLink": {
+                "msrex_offers_UserEntityInstanceDatas@odata.associationLink": {
                   "type": "string"
                 },
-                "msrex_request_UserEntityInstanceDatas@odata.navigationLink": {
+                "msrex_offers_UserEntityInstanceDatas@odata.navigationLink": {
                   "type": "string"
                 },
-                "msrex_request_ProcessSession@odata.associationLink": {
+                "msrex_offers_ProcessSession@odata.associationLink": {
                   "type": "string"
                 },
-                "msrex_request_ProcessSession@odata.navigationLink": {
+                "msrex_offers_ProcessSession@odata.navigationLink": {
                   "type": "string"
                 },
-                "msrex_request_BulkDeleteFailures@odata.associationLink": {
+                "msrex_offers_BulkDeleteFailures@odata.associationLink": {
                   "type": "string"
                 },
-                "msrex_request_BulkDeleteFailures@odata.navigationLink": {
+                "msrex_offers_BulkDeleteFailures@odata.navigationLink": {
                   "type": "string"
                 },
-                "msrex_request_PrincipalObjectAttributeAccesses@odata.associationLink": {
+                "msrex_offers_PrincipalObjectAttributeAccesses@odata.associationLink": {
                   "type": "string"
                 },
-                "msrex_request_PrincipalObjectAttributeAccesses@odata.navigationLink": {
+                "msrex_offers_PrincipalObjectAttributeAccesses@odata.navigationLink": {
                   "type": "string"
                 },
-                "msrex_request_Annotations@odata.associationLink": {
+                "msrex_offers_Annotations@odata.associationLink": {
                   "type": "string"
                 },
-                "msrex_request_Annotations@odata.navigationLink": {
-                  "type": "string"
-                },
-                "msrex_Request_msrex_Request_msrex_Resourc@odata.associationLink": {
-                  "type": "string"
-                },
-                "msrex_Request_msrex_Request_msrex_Resourc@odata.navigationLink": {
+                "msrex_offers_Annotations@odata.navigationLink": {
                   "type": "string"
                 },
                 "msrex_Account@odata.associationLink": {
@@ -1472,10 +1494,16 @@
                 "msrex_Account@odata.navigationLink": {
                   "type": "string"
                 },
-                "msrex_request_FileAttachments@odata.associationLink": {
+                "msrex_Offers_msrex_Offers_msrex_Resources@odata.associationLink": {
                   "type": "string"
                 },
-                "msrex_request_FileAttachments@odata.navigationLink": {
+                "msrex_Offers_msrex_Offers_msrex_Resources@odata.navigationLink": {
+                  "type": "string"
+                },
+                "msrex_offers_FileAttachments@odata.associationLink": {
+                  "type": "string"
+                },
+                "msrex_offers_FileAttachments@odata.navigationLink": {
                   "type": "string"
                 },
                 "msresour_ModifiedByContact@odata.associationLink": {

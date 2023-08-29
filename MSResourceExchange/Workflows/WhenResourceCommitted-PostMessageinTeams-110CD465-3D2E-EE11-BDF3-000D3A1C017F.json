@@ -74,7 +74,32 @@
                   "location": "Channel",
                   "body/recipient/groupId": "6e84a089-6f02-45d2-9b15-7b7b7bc00079",
                   "body/recipient/channelId": "19:zSyCWftZ_hpqqn4rav-0EK5dgE0vNNUxOajE2XJTrks1@thread.tacv2",
-                  "body/messageBody": "<p><span style=\"font-family: verdana\"><strong>Resource has been committed: </strong></span><a href=\"https://site-5rves.powerappsportals.com/Requests/\"><span style=\"font-family: verdana\">Resources</span></a><span style=\"font-family: verdana\"><br>\n<br>\n</span><span style=\"font-family: verdana\"><strong>Resource</strong></span><span style=\"font-family: verdana\">: </span><span style=\"font-family: verdana\">@{triggerOutputs()?['body/msrex_name']}</span><span style=\"font-family: verdana\"><br>\n<br>\n</span><span style=\"font-family: verdana\"><strong>Resource committed by:</strong></span><span style=\"font-family: verdana\"> </span><span style=\"font-family: verdana\">@{triggerOutputs()?['body/_modifiedby_type']}</span><span style=\"font-family: verdana\"><br>\n</span><span style=\"font-family: verdana\"><strong>Details</strong></span><span style=\"font-family: verdana\">: </span><span style=\"font-family: verdana\">@{outputs('Get_a_row_by_ID')?['body/cr85b_commitdetails']}</span><span style=\"font-family: verdana\"></span></p>"
+                  "body/messageBody": "<p><span style=\"font-family: verdana\"><strong>Resource has been committed: </strong></span><a href=\"https://site-5rves.powerappsportals.com/Requests/\"><span style=\"font-family: verdana\">Resources</span></a><span style=\"font-family: verdana\"><br>\n<br>\n</span><span style=\"font-family: verdana\"><strong>Resource</strong></span><span style=\"font-family: verdana\">: </span><span style=\"font-family: verdana\">@{triggerOutputs()?['body/msrex_name']}</span><span style=\"font-family: verdana\"><br>\n<br>\n</span><span style=\"font-family: verdana\"><strong>Resource committed by:</strong></span><span style=\"font-family: verdana\"> </span><span style=\"font-family: verdana\">@{outputs('Get_a_row_by_ID')?['body/_msresour_createdbycontact_value']}</span><span style=\"font-family: verdana\"><br>\n</span><span style=\"font-family: verdana\"><strong>Details</strong></span><span style=\"font-family: verdana\">: </span><span style=\"font-family: verdana\">@{outputs('Get_a_row_by_ID')?['body/cr85b_commitdetails']}</span><span style=\"font-family: verdana\"></span></p>"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "Post_message_in_a_chat_or_channel_2": {
+              "runAfter": {
+                "Post_message_in_a_chat_or_channel": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "92473714-71b6-4f3c-83c2-e8ad8eba471d"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_teams_1",
+                  "operationId": "PostMessageToConversation",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_teams"
+                },
+                "parameters": {
+                  "poster": "Flow bot",
+                  "location": "Chat with Flow bot",
+                  "body/recipient": "@{outputs('Get_a_row_by_ID')?['body/_msresour_createdbycontact_value']};",
+                  "body/messageBody": "<p><span style=\"font-family: verdana\"><strong>Resource has been committed: </strong></span><a href=\"https://site-5rves.powerappsportals.com/Requests/\"><span style=\"font-family: verdana\">Resources</span></a><span style=\"font-family: verdana\"><br>\n<br>\n</span><span style=\"font-family: verdana\"><strong>Resource</strong></span><span style=\"font-family: verdana\">: </span><span style=\"font-family: verdana\">@{triggerOutputs()?['body/msrex_name']}</span><span style=\"font-family: verdana\"><br>\n<br>\n</span><span style=\"font-family: verdana\"><strong>Resource committed by:</strong></span><span style=\"font-family: verdana\"> </span><span style=\"font-family: verdana\">@{outputs('Get_a_row_by_ID')?['body/_msresour_createdbycontact_value']}</span><span style=\"font-family: verdana\"><br>\n</span><span style=\"font-family: verdana\"><strong>Details</strong></span><span style=\"font-family: verdana\">: </span><span style=\"font-family: verdana\">@{outputs('Get_a_row_by_ID')?['body/cr85b_commitdetails']}</span><span style=\"font-family: verdana\"></span></p>"
                 },
                 "authentication": "@parameters('$authentication')"
               }

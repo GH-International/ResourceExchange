@@ -37,8 +37,9 @@
   "webform": "6ec60e5a-5f2d-ee11-bdf4-000d3a1ba9cd",
   "editexistingrecordpermitted": false,
   "geolocation_maptype": 756150000,
-  "webFormMetadatas": [],
-  "nextstep": "6b2fcaab-df83-46e6-8bd2-16127f76e515",
+  "webFormMetadatas": [
+    "0a0339e4-dd45-ee11-be6d-000d3a1ba9cd"
+  ],
   "formname": "Batch Upload Form"
 }</content>
   <iscustomizable>1</iscustomizable>
