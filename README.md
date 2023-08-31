@@ -1,6 +1,10 @@
-# Resource Exchange DEPLOYMENT GUIDE
-
+# Resource Exchange App
 The Resource Exchange capability is based on Microsoft’s Disaster Response Data Sharing Accelerator program will enable individuals involved in emergency response or recovery to rapidly negotiate matches between requests and offers for assistance. 
+
+Click [here](https://github.com/GH-International/ResourceExchange/blob/main/Resource%20Exchange%20SOP.md) for the Resource Exchange user guide. 
+
+# DEPLOYMENT GUIDE
+
 
 ![image](https://github.com/GH-International/ResourceExchange/assets/527590/6db274e6-773c-45fd-bf56-14703bf9f1ec)
 
