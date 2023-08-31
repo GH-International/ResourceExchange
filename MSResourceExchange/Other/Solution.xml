@@ -6,7 +6,7 @@
       <LocalizedName description="MSResourceExchange" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.10</Version>
+    <Version>1.0.0.11</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>MSResourceExchange</UniqueName>
@@ -84,7 +84,9 @@
       <RootComponent type="1" schemaName="msrex_request" behavior="0" />
       <RootComponent type="1" schemaName="msrex_resources" behavior="0" />
       <RootComponent type="29" id="{110cd465-3d2e-ee11-bdf3-000d3a1c017f}" behavior="0" />
+      <RootComponent type="29" id="{b3936fa1-f247-ee11-be6d-000d3a190120}" behavior="0" />
       <RootComponent type="29" id="{d1a4448a-7f2c-ee11-bdf4-000d3a190120}" behavior="0" />
+      <RootComponent type="29" id="{f2313f05-f247-ee11-be6d-000d3a1c0c13}" behavior="0" />
       <RootComponent type="29" id="{f39fdff4-f141-ee11-bdf3-000d3a1c0c13}" behavior="0" />
       <RootComponent type="62" schemaName="cr85b_ResourceExchangeOffers" behavior="0" />
       <RootComponent type="62" schemaName="cr85b_ResourceExchangeRequests" behavior="0" />
@@ -115,6 +117,14 @@
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
         <Dependent type="80" schemaName="cr85b_ResourceExchangeRequests" displayName="Resource Exchange Requests" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="connectionreference" displayName="democop_sharedpowerbi_2b122" solution="Active" id.connectionreferencelogicalname="democop_sharedpowerbi_2b122" />
+        <Dependent type="29" displayName="Offer - Refresh Dashboard" id="{b3936fa1-f247-ee11-be6d-000d3a190120}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="connectionreference" displayName="democop_sharedpowerbi_2b122" solution="Active" id.connectionreferencelogicalname="democop_sharedpowerbi_2b122" />
+        <Dependent type="29" displayName="Request - Dashboard Refresh" id="{f2313f05-f247-ee11-be6d-000d3a1c0c13}" />
       </MissingDependency>
       <MissingDependency>
         <Required type="connectionreference" displayName="msdyn_Dataverse" solution="msdynce_KnowledgeManagementOnlineExtension (9.0.23071.5024)" id.connectionreferencelogicalname="msdyn_Dataverse">
