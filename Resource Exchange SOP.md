@@ -11,17 +11,17 @@ The Resource Exchange capability was developed by G&H International in collabora
 
 # Sections
 
-[Navigation](#-navigation)
+[Navigation](#navigation)
 
-[Posting Single Requests or Offers](#-posting-single-requests-or-offers)
+[Posting Single Requests or Offers](#posting-single-requests-or-offers)
 
-[Posting Batch Requests or Offers](# Toc144382214)
+[Posting Batch Requests or Offers](#posting-batch-requests-or-offers)
 
-[Committing Offers to Existing Requests 6](# Toc144382215)
+[Committing Offers to Existing Requests](#committing-offers-to-existing-requests)
 
-[Updating Status of Requests and Offers 7](# Toc144382216)
+[Updating Status of Requests and Offers](#updating-status-of-requests-and-offers)
 
-[Admin Dashboard 9](# Toc144382217)
+[Admin Dashboard](#admin-dashboard)
 
 # Navigation
 
